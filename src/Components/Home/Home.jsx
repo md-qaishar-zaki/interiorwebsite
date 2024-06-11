@@ -8,8 +8,12 @@ import ProjectFrame from '../../Assets/ProjectFrame.png';
 import Project from '../../Assets/project1.jpg';
 import TransformationsFrame from '../../Assets/TransformationsFrame.png';
 import TestimonialFrame from '../../Assets/TestimonialFrame.png';
+import ContactFrame from '../../Assets/Contact-Frame.png';
+import TeamFrame from '../../Assets/TeamFrame.png';
 import 'react-tabs/style/react-tabs.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 
 export default function Home() {
@@ -267,9 +271,26 @@ export default function Home() {
         </div>
         <div className="IMGBOX">
           <img src={TransformationsFrame} alt="" className='Frame' />
-          <div className="compare-container">
-            <ReactCompareImage leftImage={before} rightImage={after} />
-          </div>
+          <Carousel infiniteLoop showIndicators={false} showThumbs={false}>
+            <div className="IMGBOX">
+              <img src={TestimonialFrame} alt="" className='Frame' />
+              <div className="compare-container">
+                <ReactCompareImage leftImage={before} rightImage={after} />
+              </div>
+            </div>
+            <div className="IMGBOX">
+              <img src={TestimonialFrame} alt="" className='Frame' />
+              <div className="compare-container">
+                <ReactCompareImage leftImage={before} rightImage={after} />
+              </div>
+            </div>
+            <div className="IMGBOX">
+              <img src={TestimonialFrame} alt="" className='Frame' />
+              <div className="compare-container">
+                <ReactCompareImage leftImage={before} rightImage={after} />
+              </div>
+            </div>
+          </Carousel>
         </div>
       </section>
       <section className='Testimonial'>
@@ -281,46 +302,132 @@ export default function Home() {
         </div>
         <div className="IMGBOX">
           <img src={TestimonialFrame} alt="" className='Frame' />
+          <Carousel infiniteLoop showIndicators={false} showThumbs={false}>
+            <div className="IMGBOX">
+              <img src={TestimonialFrame} alt="" className='Frame' />
+              <img src="https://via.placeholder.com/600x400" alt="Image 1" className='Imgs' />
+            </div>
+            <div className="IMGBOX">
+              <img src={TestimonialFrame} alt="" className='Frame' />
+              <img src="https://via.placeholder.com/600x400" alt="Image 1" className='Imgs' />
+            </div>
+            <div className="IMGBOX">
+              <img src={TestimonialFrame} alt="" className='Frame' />
+              <img src="https://via.placeholder.com/600x400" alt="Image 2" className='Imgs' />
+            </div>
+            <div className="IMGBOX">
+              <img src={TestimonialFrame} alt="" className='Frame' />
+              <img src="https://via.placeholder.com/600x400" alt="Image 3" className='Imgs' />
+            </div>
+          </Carousel>
         </div>
       </section>
-      <section className="contact-us">
-        <h1>CONTACT US</h1>
-        <p>Get Your Free Quote Today!</p>
-        <div className="address-container">
-          <h3>Address</h3>
-          <p>4517 Washington Ave. <br /> Manchester, Kentucky 39495</p>
+      <section className="contact-us container mx-auto">
+        <span className="tag">CONTACT US</span>
+        <h2>Get Your <span>Free Quote Today!</span></h2>
+        <div className="flex">
+          <div className="w-1/2">
+            <form action="/submit_form" method="post">
+              <div className="form-group">
+                <label htmlFor="name">Your Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div className="form-group w-full">
+                <label htmlFor="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div className="form-group w-full	">
+                <label htmlFor="message">Your Message *</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button><i className="bi-arrow-right-circle-fill"></i><span>Send Message</span></button>
+            </form>
+          </div>
+          <div className="w-1/2 padding">
+            <div className="address-container" style={{ backgroundImage: `url(${ContactFrame}) ` }}>
+              <div>
+                <h3>Address</h3>
+                <p>4517 Washington Ave. <br /> Manchester, Kentucky 39495</p>
+              </div>
+              <div className='py-4'>
+                <h3>Contact</h3>
+                <p>Phone: +91 00000000<br /> Email: support@gmail.com</p>
+              </div>
+              <div className='py-4'>
+                <h3>Open Time</h3>
+                <p>Monday - Friday: 10:00-20:00<br /> Saturday Sunday: 11:00-18:00</p>
+              </div>
+              <div className='py-4'>
+                <h3>Stay Connected</h3>
+                <div className="flex icons">
+                  <i className="bi-facebook"></i>
+                  <i className="bi-twitter"></i>
+                  <i className="bi-instagram"></i>
+                  <i className="bi-youtube"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <form action="/submit_form" method="post">
-          <div className="form-group">
-            <label for="name">Your Name *</label>
-            <input type="text" id="name" name="name" required />
+      </section>
+      <section className='OutTeam container mx-auto '>
+        <span className="tag">Our team</span>
+        <h2>Meet Our <span>Expert Team</span></h2>
+        <div className="flex">
+          <div className="w-4/12 text-center px-2">
+            <div className="imgBox">
+              <img src={TeamFrame} alt="" />
+              <div className="socialMedia">
+                <i className="bi-facebook"></i>
+                <i className="bi-twitter"></i>
+                <i className="bi-instagram"></i>
+                <i className="bi-youtube"></i>
+              </div>
+            </div>
+            <h3>Darlene Robertson</h3>
+            <span>[ Architect ]</span>
           </div>
-          <div className="form-group">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" required />
+          <div className="w-4/12 text-center px-2">
+            <div className="imgBox">
+              <img src={TeamFrame} alt="" />
+              <div className="socialMedia">
+                <i className="bi-facebook"></i>
+                <i className="bi-twitter"></i>
+                <i className="bi-instagram"></i>
+                <i className="bi-youtube"></i>
+              </div>
+            </div>
+            <h3>Darlene Robertson</h3>
+            <span>[ Architect ]</span>
           </div>
-          <div className="form-gruppe">
-            <label for="subject">Subject *</label>
-            <input type="text" id="subject" name="subject" required />
+          <div className="w-4/12 text-center px-2">
+            <div className="imgBox">
+              <img src={TeamFrame} alt="" />
+              <div className="socialMedia">
+                <i className="bi-facebook"></i>
+                <i className="bi-twitter"></i>
+                <i className="bi-instagram"></i>
+                <i className="bi-youtube"></i>
+              </div>
+            </div>
+            <h3>Darlene Robertson</h3>
+            <span>[ Architect ]</span>
           </div>
-          <div className="form-group">
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" />
+        </div>
+      </section>
+      <section className='Label'>
+        <marquee behavior="" direction="">
+          <div className="flex items-center	">
+            <p>Residential Design</p> <span>*</span>
+            <p>Commercial Design</p> <span>*</span>
+            <p>Hospitality Design</p> <span>*</span>
+            <p>Educational Architecher</p> <span>*</span>
           </div>
-          <div className="form-group">
-            <label for="message">Your Message *</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <div className="form-group">
-            <h3>Open Time</h3>
-            <p>Monday - Friday: 10:00-20:00<br /> Saturday Sunday: 11:00-18:00</p>
-          </div>
-          <div className="form-group">
-            <h3>Stay Connected</h3>
-            <p> </p>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
+        </marquee>
       </section>
     </>
   )

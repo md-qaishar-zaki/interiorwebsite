@@ -15,14 +15,14 @@ export default function Header() {
               <i className="bi-telephone-fill px-2"></i><p>+91 7633953812</p>
             </div>
             <div className="flex px-2">
-              <i class="bi-envelope-fill px-2"></i><p>abc@gmail.com</p>
+              <i className="bi-envelope-fill px-2"></i><p>abc@gmail.com</p>
             </div>
           </div>
           <div className="social-media flex flex-row justify-between">
-            <i class="bi-facebook"></i>
-            <i class="bi-twitter"></i>
-            <i class="bi-instagram"></i>
-            <i class="bi-youtube"></i>
+            <i className="bi-facebook"></i>
+            <i className="bi-twitter"></i>
+            <i className="bi-instagram"></i>
+            <i className="bi-youtube"></i>
           </div>
         </div>
         <div className="yellowPanel"></div>
