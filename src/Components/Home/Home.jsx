@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className="container mx-auto">
+      <div className="container mx-auto threeBoxs">
         <div className="flex">
           <div className="box">
             <i className="bi-box-seam"></i>
@@ -65,10 +65,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className='AboutUS container mx-auto'>
-        <div className="flex">
-          <div className="w-1/2"></div>
-          <div className="w-1/2">
+      <section className='AboutUS container mx-auto flex'> 
+          <div className="w-1/2 AboutBox"></div>
+          <div className="w-1/2 AboutBox">
             <span className='tag'>ABOUT US</span>
             <h2>Turning <span>Your Dream Home</span> into Reality </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, porro facilis harum praesentium in illum.</p>
@@ -87,8 +86,7 @@ export default function Home() {
                 <p>Satisfied Customer</p>
               </div>
             </div>
-          </div>
-        </div>
+          </div> 
       </section>
       <section className='Services container mx-auto'>
         <div className="content">
@@ -99,7 +97,7 @@ export default function Home() {
             <button><i className="bi-arrow-right-circle-fill"></i><span>View All Services</span></button>
           </div>
         </div>
-        <div className="flex content">
+        <div className="flex content AllBoxes">
           <div className="boxs">
             <h6>Architectural Design</h6>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -120,7 +118,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='Label'>
+      <section className='Label hidden'>
         <marquee behavior="" direction="">
           <div className="flex items-center	">
             <p>Residential Design</p> <span>*</span>
@@ -293,7 +291,7 @@ export default function Home() {
           </Carousel>
         </div>
       </section>
-      <section className='Testimonial'>
+      <section className='Testimonial hidden'>
         <span className="tag">Testimonial</span>
         <h2>What <span>Our Client</span></h2>
         <div className="flex justify-between">
@@ -322,7 +320,7 @@ export default function Home() {
           </Carousel>
         </div>
       </section>
-      <section className="contact-us container mx-auto">
+      <section className="contact-us container mx-auto hidden">
         <span className="tag">CONTACT US</span>
         <h2>Get Your <span>Free Quote Today!</span></h2>
         <div className="flex">
@@ -374,7 +372,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='OutTeam container mx-auto '>
+      <section className='OutTeam container mx-auto hidden'>
         <span className="tag">Our team</span>
         <h2>Meet Our <span>Expert Team</span></h2>
         <div className="flex">
@@ -419,7 +417,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='Label'>
+      <section className="Label hidden">
         <marquee behavior="" direction="">
           <div className="flex items-center	">
             <p>Residential Design</p> <span>*</span>
