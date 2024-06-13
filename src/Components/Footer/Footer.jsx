@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       <footer>
         <div className="container mx-auto">
-          <div className="flex">
+          <div className="flex boxs">
             <div className="w-2/6">
               <h6>Logo</h6>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis reprehenderit magnam provident porro?</p>
@@ -18,7 +18,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="w-4/6">
-              <div className="flex">
+              <div className="flex boxs lastBox">
                 <div className="w-1/4 px-2">
                   <h6>Company</h6>
                   <ul>

@@ -282,21 +282,21 @@ export default function Home() {
           </div>
           <div className="IMGBOX">
             <img src={TransformationsFrame} alt="" className='Frame' />
-            <Carousel infiniteLoop showIndicators={false} showThumbs={false}>
+            <Carousel infiniteLoop showIndicators={false} showThumbs={false}  emulateTouch={false} swipeable={false}>
               <div className="IMGBOX">
-                <img src={TestimonialFrame} alt="" className='Frame' />
+                <img src={TransformationsFrame} alt="" className='Frame' />
                 <div className="compare-container">
                   <ReactCompareImage leftImage={before} rightImage={after} />
                 </div>
               </div>
               <div className="IMGBOX">
-                <img src={TestimonialFrame} alt="" className='Frame' />
+                <img src={TransformationsFrame} alt="" className='Frame' />
                 <div className="compare-container">
                   <ReactCompareImage leftImage={before} rightImage={after} />
                 </div>
               </div>
               <div className="IMGBOX">
-                <img src={TestimonialFrame} alt="" className='Frame' />
+                <img src={TransformationsFrame} alt="" className='Frame' />
                 <div className="compare-container">
                   <ReactCompareImage leftImage={before} rightImage={after} />
                 </div>
@@ -305,7 +305,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='Testimonial hidden'>
+      <section className='Testimonial'>
         <span className="tag">Testimonial</span>
         <h2>What <span>Our Client</span></h2>
         <div className="flex justify-between">
@@ -314,7 +314,7 @@ export default function Home() {
         </div>
         <div className="IMGBOX">
           <img src={TestimonialFrame} alt="" className='Frame' />
-          <Carousel infiniteLoop showIndicators={false} showThumbs={false}>
+          <Carousel infiniteLoop showIndicators={false} showThumbs={false}  emulateTouch={false} swipeable={false}>
             <div className="IMGBOX">
               <img src={TestimonialFrame} alt="" className='Frame' />
               <img src="https://via.placeholder.com/600x400" alt="Image 1" className='Imgs' />
@@ -334,10 +334,10 @@ export default function Home() {
           </Carousel>
         </div>
       </section>
-      <section className="contact-us container mx-auto hidden">
+      <section className="contact-us container mx-auto">
         <span className="tag">CONTACT US</span>
         <h2>Get Your <span>Free Quote Today!</span></h2>
-        <div className="flex">
+        <div className="flex contactBoxs">
           <div className="w-1/2">
             <form action="/submit_form" method="post">
               <div className="form-group">
@@ -386,10 +386,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='OutTeam container mx-auto hidden'>
+      <section className='OutTeam container mx-auto'>
         <span className="tag">Our team</span>
         <h2>Meet Our <span>Expert Team</span></h2>
-        <div className="flex">
+        <div className="flex TeamBoxs">
           <div className="w-4/12 text-center px-2">
             <div className="imgBox">
               <img src={TeamFrame} alt="" />
@@ -431,7 +431,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="Label hidden">
+      <section className="Label">
         <marquee behavior="" direction="">
           <div className="flex items-center	">
             <p>Residential Design</p> <span>*</span>

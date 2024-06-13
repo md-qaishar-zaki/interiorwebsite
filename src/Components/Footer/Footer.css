@@ -30,7 +30,8 @@ footer input {
     font-weight: 600;
     color: var(--white-color);
 }
-footer input::placeholder{
+
+footer input::placeholder {
     color: var(--white-color);
 }
 
@@ -77,43 +78,128 @@ footer .socialMedia i {
 }
 
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .footer-content {
+
+@media (max-width: 375px) {
+    footer {
+        padding: 60px 20px 20px 20px;
+    }
+
+    footer h6 {
+        font-size: 16px;
+    }
+
+    footer li {
+        font-size: 12px;
+    }
+
+    
+    .boxs {
         flex-direction: column;
     }
 
-    .w-full {
-        width: 100%;
+    .boxs .w-2\/6,
+    .boxs .w-4\/6,
+    .boxs .w-2\/4 {
+        width: 100% !important;
     }
 
-    .mb-4 {
-        margin-bottom: 1rem;
+    .boxs .w-1\/4 {
+        width: 50% !important;
     }
 
-    .px-2 {
-        padding: 0 0.5rem;
-    }
-
-    .mt-6 {
-        margin-top: 1.5rem;
-    }
-
-    .pt-6 {
-        padding-top: 1.5rem;
-    }
-
-    .flex-wrap {
+    .lastBox {
+        display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
     }
 }
 
-@media (min-width: 769px) {
-    .footer-content {
-        flex-direction: unset;
+@media (max-width: 575.98px) {
+    footer {
+        padding: 60px 20px 20px 20px;
     }
 
-    .flex-wrap {
-        flex-wrap: unset;
+    footer h6 {
+        font-size: 16px;
+    }
+
+    footer li {
+        font-size: 12px;
+    }
+
+    .boxs {
+        flex-direction: column;
+    }
+
+    .boxs .w-2\/6,
+    .boxs .w-4\/6,
+    .boxs .w-2\/4 {
+        width: 100% !important;
+    }
+
+    .boxs .w-1\/4 {
+        width: 50% !important;
+    }
+
+    .lastBox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    footer {
+        padding: 60px 20px 20px 20px;
+    }
+
+    footer h6 {
+        font-size: 16px;
+    }
+
+    footer li {
+        font-size: 12px;
+    }
+ 
+    
+    .boxs {
+        flex-direction: column;
+    }
+
+    .boxs .w-2\/6,
+    .boxs .w-4\/6,
+    .boxs .w-2\/4 {
+        width: 100% !important;
+    }
+
+    .boxs .w-1\/4 {
+        width: 50% !important;
+    }
+
+    .lastBox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    footer {
+        padding: 60px 20px 20px 20px;
+    }
+
+    footer h6 {
+        font-size: 16px;
+    }
+
+    footer li {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media (min-width: 1400px) {}
