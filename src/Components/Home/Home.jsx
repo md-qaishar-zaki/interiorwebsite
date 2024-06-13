@@ -65,7 +65,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className='AboutUS container mx-auto flex'> 
+      <section className='AboutUS'>
+        <div className="container mx-auto flex">
           <div className="w-1/2 AboutBox"></div>
           <div className="w-1/2 AboutBox">
             <span className='tag'>ABOUT US</span>
@@ -86,209 +87,222 @@ export default function Home() {
                 <p>Satisfied Customer</p>
               </div>
             </div>
-          </div> 
-      </section>
-      <section className='Services container mx-auto'>
-        <div className="content">
-          <span className='tag'>Our services</span>
-          <h2>Explore Our Services:</h2>
-          <div className="flex justify-between">
-            <h2><span>Your Path to Success</span></h2>
-            <button><i className="bi-arrow-right-circle-fill"></i><span>View All Services</span></button>
-          </div>
-        </div>
-        <div className="flex content AllBoxes">
-          <div className="boxs">
-            <h6>Architectural Design</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src={Art_IMG} alt="" />
-            <i className="bi-arrow-up-right-circle-fill"></i>
-          </div>
-          <div className="boxs">
-            <h6>Interior Design</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src={Art_IMG} alt="" />
-            <i className="bi-arrow-up-right-circle-fill"></i>
-          </div>
-          <div className="boxs">
-            <h6>Hospitality Design</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src={Art_IMG} alt="" />
-            <i className="bi-arrow-up-right-circle-fill"></i>
           </div>
         </div>
       </section>
-      <section className='Label hidden'>
-        <marquee behavior="" direction="">
-          <div className="flex items-center	">
-            <p>Residential Design</p> <span>*</span>
-            <p>Commercial Design</p> <span>*</span>
-            <p>Hospitality Design</p> <span>*</span>
-            <p>Educational Architecher</p> <span>*</span>
-          </div>
-        </marquee>
-      </section>
-      <section className='OurWork container mx-auto'>
-        <div className="content">
-          <span className='tag'>Our Work Proccess</span>
-          <h2>Our Work Process: <span>Crafting Architectural Excellence</span></h2>
-        </div>
-        <div className="flex pdBox">
-          <div className="boxs">
-            <div className="icon">
-              <i className="bi-clipboard"></i>
-              <div className="no">01</div>
+      <section className='Services'>
+        <div className="container mx-auto">
+          <div className="content">
+            <span className='tag'>Our services</span>
+            <h2>Explore Our Services:</h2>
+            <div className="flex justify-between">
+              <h2><span>Your Path to Success</span></h2>
+              <button><i className="bi-arrow-right-circle-fill"></i><span>View All Services</span></button>
             </div>
-            <h6>Survey</h6>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
-          <div className="boxs">
-            <div className="icon">
-              <i className="bi-clipboard"></i>
-              <div className="no">01</div>
+          <div className="flex content AllBoxes">
+            <div className="boxs">
+              <h6>Architectural Design</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <img src={Art_IMG} alt="" />
+              <i className="bi-arrow-up-right-circle-fill"></i>
             </div>
-            <h6>Survey</h6>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
-          <div className="boxs">
-            <div className="icon">
-              <i className="bi-clipboard"></i>
-              <div className="no">01</div>
+            <div className="boxs">
+              <h6>Interior Design</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <img src={Art_IMG} alt="" />
+              <i className="bi-arrow-up-right-circle-fill"></i>
             </div>
-            <h6>Survey</h6>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
-          <div className="boxs">
-            <div className="icon iconLast">
-              <i className="bi-clipboard"></i>
-              <div className="no">01</div>
+            <div className="boxs">
+              <h6>Hospitality Design</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <img src={Art_IMG} alt="" />
+              <i className="bi-arrow-up-right-circle-fill"></i>
             </div>
-            <h6>Survey</h6>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
         </div>
       </section>
       <section className='Label'>
-        <marquee behavior="" direction="">
-          <div className="flex items-center	">
-            <p>Residential Design</p> <span>*</span>
-            <p>Commercial Design</p> <span>*</span>
-            <p>Hospitality Design</p> <span>*</span>
-            <p>Educational Architecher</p> <span>*</span>
-          </div>
-        </marquee>
+        <div className="container mx-auto">
+          <marquee behavior="" direction="">
+            <div className="flex items-center	">
+              <p>Residential Design</p> <span>*</span>
+              <p>Commercial Design</p> <span>*</span>
+              <p>Hospitality Design</p> <span>*</span>
+              <p>Educational Architecher</p> <span>*</span>
+            </div>
+          </marquee>
+        </div>
       </section>
-      <section className='OurProject container mx-auto'>
-        <div className="pdBox">
-          <span className="tag">Our Projects</span>
-          <h2>Explore <span>Our Portfolio</span></h2>
-          <div className="flex justify-between items-center">
-            <h2>of Featured Projects</h2>
-            <button><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button>
+      <section className='OurWork'>
+        <div className="container mx-auto">
+          <div className="content">
+            <span className='tag'>Our Work Proccess</span>
+            <h2>Our Work Process: <span>Crafting Architectural Excellence</span></h2>
+          </div>
+          <div className="flex pdBox">
+            <div className="boxs">
+              <div className="icon">
+                <i className="bi-clipboard"></i>
+                <div className="no">01</div>
+              </div>
+              <h6>Survey</h6>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div className="boxs">
+              <div className="icon">
+                <i className="bi-clipboard"></i>
+                <div className="no">01</div>
+              </div>
+              <h6>Survey</h6>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div className="boxs">
+              <div className="icon">
+                <i className="bi-clipboard"></i>
+                <div className="no">01</div>
+              </div>
+              <h6>Survey</h6>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div className="boxs">
+              <div className="icon iconLast">
+                <i className="bi-clipboard"></i>
+                <div className="no">01</div>
+              </div>
+              <h6>Survey</h6>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
           </div>
         </div>
-        <Tabs>
-          <TabList className="pdBox">
-            <Tab>Interior</Tab>
-            <Tab>Exterior</Tab>
-            <Tab>Residence</Tab>
-            <Tab>Offices</Tab>
-            <Tab>Kitchen</Tab>
-            <Tab>Living Room</Tab>
-            <Tab>Bed Room</Tab>
-          </TabList>
+      </section>
+      <section className='Label'>
+        <div className="container mx-auto">
+          <marquee behavior="" direction="">
+            <div className="flex items-center	">
+              <p>Residential Design</p> <span>*</span>
+              <p>Commercial Design</p> <span>*</span>
+              <p>Hospitality Design</p> <span>*</span>
+              <p>Educational Architecher</p> <span>*</span>
+            </div>
+          </marquee>
+        </div>
+      </section>
+      <section className='OurProject'>
+        <div className="container mx-auto">
+          <div className="pdBox">
+            <span className="tag">Our Projects</span>
+            <h2>Explore <span>Our Portfolio</span></h2>
+            <div className="flex justify-between items-center">
+              <h2>of Featured Projects</h2>
+              <button><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button>
+            </div>
+          </div>
+          <Tabs>
+            <TabList className="pdBox">
+              <Tab>Interior</Tab>
+              <Tab>Exterior</Tab>
+              <Tab>Residence</Tab>
+              <Tab>Offices</Tab>
+              <Tab>Kitchen</Tab>
+              <Tab>Living Room</Tab>
+              <Tab>Bed Room</Tab>
+            </TabList>
 
-          <TabPanel>
-            <div className="flex pdBox">
-              <div className="w-1/2">
-                <div className="imgBox">
-                  <img src={ProjectFrame} alt="" className='Frame' />
-                  <img src={Project} alt="" className='projectIMG' />
-                  <div className="Details">
-                    <h4>Modern 4 BHK Apartment Interior Design</h4>
-                    <button>2024</button>
-                    <button>Apartment</button>
-                    <button>Residential Design</button>
+            <TabPanel>
+              <div className="flex pdBox">
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={Project} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
                   </div>
-                  <i className="bi-arrow-up-right-circle-fill"></i>
+                </div>
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={Project} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
                 </div>
               </div>
-              <div className="w-1/2">
-                <div className="imgBox">
-                  <img src={ProjectFrame} alt="" className='Frame' />
-                  <img src={Project} alt="" className='projectIMG' />
-                  <div className="Details">
-                    <h4>Modern 4 BHK Apartment Interior Design</h4>
-                    <button>2024</button>
-                    <button>Apartment</button>
-                    <button>Residential Design</button>
+            </TabPanel>
+            <TabPanel>
+              <div className="flex pdBox">
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={Project} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
                   </div>
-                  <i className="bi-arrow-up-right-circle-fill"></i>
+                </div>
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={Project} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
                 </div>
               </div>
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="flex pdBox">
-              <div className="w-1/2">
-                <div className="imgBox">
-                  <img src={ProjectFrame} alt="" className='Frame' />
-                  <img src={Project} alt="" className='projectIMG' />
-                  <div className="Details">
-                    <h4>Modern 4 BHK Apartment Interior Design</h4>
-                    <button>2024</button>
-                    <button>Apartment</button>
-                    <button>Residential Design</button>
-                  </div>
-                  <i className="bi-arrow-up-right-circle-fill"></i>
-                </div>
-              </div>
-              <div className="w-1/2">
-                <div className="imgBox">
-                  <img src={ProjectFrame} alt="" className='Frame' />
-                  <img src={Project} alt="" className='projectIMG' />
-                  <div className="Details">
-                    <h4>Modern 4 BHK Apartment Interior Design</h4>
-                    <button>2024</button>
-                    <button>Apartment</button>
-                    <button>Residential Design</button>
-                  </div>
-                  <i className="bi-arrow-up-right-circle-fill"></i>
-                </div>
-              </div>
-            </div>
-          </TabPanel>
-        </Tabs>
+            </TabPanel>
+          </Tabs>
+        </div>
       </section>
       <section className='Transformations'>
-        <span className="tag">Before & After</span>
-        <h2>See Our <span>Design</span></h2>
-        <div className="flex justify-between">
-          <h2><span>Transformations</span></h2>
-          <button><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button>
-        </div>
-        <div className="IMGBOX">
-          <img src={TransformationsFrame} alt="" className='Frame' />
-          <Carousel infiniteLoop showIndicators={false} showThumbs={false}>
-            <div className="IMGBOX">
-              <img src={TestimonialFrame} alt="" className='Frame' />
-              <div className="compare-container">
-                <ReactCompareImage leftImage={before} rightImage={after} />
+        <div className="container mx-auto">
+          <span className="tag">Before & After</span>
+          <h2>See Our <span>Design</span></h2>
+          <div className="flex justify-between">
+            <h2><span>Transformations</span></h2>
+            <button><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button>
+          </div>
+          <div className="IMGBOX">
+            <img src={TransformationsFrame} alt="" className='Frame' />
+            <Carousel infiniteLoop showIndicators={false} showThumbs={false}>
+              <div className="IMGBOX">
+                <img src={TestimonialFrame} alt="" className='Frame' />
+                <div className="compare-container">
+                  <ReactCompareImage leftImage={before} rightImage={after} />
+                </div>
               </div>
-            </div>
-            <div className="IMGBOX">
-              <img src={TestimonialFrame} alt="" className='Frame' />
-              <div className="compare-container">
-                <ReactCompareImage leftImage={before} rightImage={after} />
+              <div className="IMGBOX">
+                <img src={TestimonialFrame} alt="" className='Frame' />
+                <div className="compare-container">
+                  <ReactCompareImage leftImage={before} rightImage={after} />
+                </div>
               </div>
-            </div>
-            <div className="IMGBOX">
-              <img src={TestimonialFrame} alt="" className='Frame' />
-              <div className="compare-container">
-                <ReactCompareImage leftImage={before} rightImage={after} />
+              <div className="IMGBOX">
+                <img src={TestimonialFrame} alt="" className='Frame' />
+                <div className="compare-container">
+                  <ReactCompareImage leftImage={before} rightImage={after} />
+                </div>
               </div>
-            </div>
-          </Carousel>
+            </Carousel>
+          </div>
         </div>
       </section>
       <section className='Testimonial hidden'>

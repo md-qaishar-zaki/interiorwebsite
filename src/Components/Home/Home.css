@@ -61,7 +61,7 @@
 }
 
 .main-Banner {
-    padding: 60px 0;
+    padding: 60px 80px;
 }
 
 .Hero {
@@ -72,8 +72,9 @@
 }
 
 .imgBox {
-    width: 530px;
+    width: 65%;
     position: relative;
+    margin: auto;
 }
 
 .Frame {
