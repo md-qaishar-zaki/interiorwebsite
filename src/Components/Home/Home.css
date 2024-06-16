@@ -1349,12 +1349,35 @@
     }
 }
 
+@media (max-width: 425px) {
+    .Services .boxs {
+        width: 95% !important;
+        height: 100%;
+    }
+
+    .Services .boxs img {
+        height: 100% !important;
+    }
+
+    .Transformations {
+        padding: 30px 17px !important;
+    }
+}
+
 @media (max-width: 575.98px) {
+    .Services button span {
+        padding: 16px 12px;
+    }
+
+    .main-Banner {
+        padding: 95px 0px;
+    }
+
     main .content .imgBox {
         width: 50%;
         position: absolute;
         top: 60px;
-        left: 212px;
+        right: 2px;
     }
 
     .main-Banner .contentBox {
@@ -1447,7 +1470,7 @@
     /* ----------------- Services ---------------- */
     .Services h2 {
         font-size: 28px;
-        line-height: 38px;
+        line-height: 30px;
     }
 
     .Services .tag {
@@ -1585,6 +1608,10 @@
         padding: 0px 15px;
     }
 
+    .OurProject button span {
+        padding: 16px 15px;
+    }
+
 
     /* --------------------Transformations ----------------- */
 
@@ -1593,8 +1620,8 @@
     }
 
     .Transformations h2 {
-        font-size: 45px;
-        line-height: 48px;
+        font-size: 25px;
+        line-height: 28px;
     }
 
     .IMGBOX {
@@ -1681,9 +1708,9 @@
     }
 
     .OutTeam .socialMedia {
-        bottom: 35px !important;
+        bottom: 22px !important;
         left: 0px;
-        padding: 0 50px;
+        padding: 0 17px;
     }
 
     .OutTeam .socialMedia i {
@@ -2011,6 +2038,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .main-Banner {
+        padding: 27px 0px;
+    }
 
     main .content .imgBox {
         width: 380px;
