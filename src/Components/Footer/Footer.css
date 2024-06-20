@@ -92,7 +92,7 @@ footer .socialMedia i {
         font-size: 12px;
     }
 
-    
+
     .boxs {
         flex-direction: column;
     }
@@ -146,6 +146,10 @@ footer .socialMedia i {
         flex-wrap: wrap;
         flex-direction: row;
     }
+
+    .downFooter {
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -160,8 +164,8 @@ footer .socialMedia i {
     footer li {
         font-size: 12px;
     }
- 
-    
+
+
     .boxs {
         flex-direction: column;
     }
@@ -180,6 +184,10 @@ footer .socialMedia i {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+    }
+
+    .downFooter {
+        flex-direction: column;
     }
 
 }

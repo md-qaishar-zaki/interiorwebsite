@@ -32,7 +32,7 @@ export default function Home() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ullam hic blanditiis molestias rerum deleniti quidem non laudantium tempora a?</p>
             <button><i className="bi-arrow-right-circle-fill"></i><span>Get Started</span></button>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 relative">
             <div className="imgBox">
               <img src={Frame_IMG} alt="" className='Frame' />
               <img src={Hero_IMG} alt="" className='Hero' />
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </main>
       <div className="container mx-auto threeBoxs">
-        <div className="flex">
+        <div className="flex boxes">
           <div className="box">
             <i className="bi-box-seam"></i>
             <div className="flex flex-col">
@@ -66,11 +66,13 @@ export default function Home() {
         </div>
       </div>
       <section className='AboutUS'>
-        <div className="container mx-auto flex">
+        <div className="container mx-auto flex AbousResposive">
           <div className="w-1/2 AboutBox"></div>
           <div className="w-1/2 AboutBox">
-            <span className='tag'>ABOUT US</span>
-            <h2>Turning <span>Your Dream Home</span> into Reality </h2>
+            <div className="contentHeader">
+              <span className='tag'>ABOUT US</span>
+              <h2>Turning <span>Your Dream Home</span> into Reality </h2>
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, porro facilis harum praesentium in illum.</p>
 
             <div className="flex">
@@ -93,11 +95,13 @@ export default function Home() {
       <section className='Services'>
         <div className="container mx-auto">
           <div className="content">
-            <span className='tag'>Our services</span>
-            <h2>Explore Our Services:</h2>
-            <div className="flex justify-between">
-              <h2><span>Your Path to Success</span></h2>
-              <button><i className="bi-arrow-right-circle-fill"></i><span>View All Services</span></button>
+            <div className="contentHeader">
+              <span className='tag'>Our services</span>
+              <h2>Explore Our Services:</h2>
+              <div className="flex justify-between">
+                <h2><span>Your Path to Success</span></h2>
+                <button className='viewBTN'><i className="bi-arrow-right-circle-fill"></i><span>View All Services</span></button>
+              </div>
             </div>
           </div>
           <div className="flex content AllBoxes">
@@ -137,8 +141,10 @@ export default function Home() {
       <section className='OurWork'>
         <div className="container mx-auto">
           <div className="content">
-            <span className='tag'>Our Work Proccess</span>
-            <h2>Our Work Process: <span>Crafting Architectural Excellence</span></h2>
+            <div className="contentHeader">
+              <span className='tag'>Our Work Proccess</span>
+              <h2>Our Work Process: <span>Crafting Architectural Excellence</span></h2>
+            </div>
           </div>
           <div className="flex pdBox">
             <div className="boxs">
@@ -191,11 +197,13 @@ export default function Home() {
       <section className='OurProject'>
         <div className="container mx-auto">
           <div className="pdBox">
-            <span className="tag">Our Projects</span>
-            <h2>Explore <span>Our Portfolio</span></h2>
-            <div className="flex justify-between items-center">
-              <h2>of Featured Projects</h2>
-              <button><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button>
+            <div className="contentHeader">
+              <span className="tag">Our Projects</span>
+              <h2>Explore <span>Our Portfolio</span></h2>
+              <div className="flex justify-between items-center">
+                <h2>of Featured Projects</h2>
+                <button className='viewBTN'><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button>
+              </div>
             </div>
           </div>
           <Tabs>
@@ -274,15 +282,17 @@ export default function Home() {
       </section>
       <section className='Transformations'>
         <div className="container mx-auto">
-          <span className="tag">Before & After</span>
-          <h2>See Our <span>Design</span></h2>
-          <div className="flex justify-between">
-            <h2><span>Transformations</span></h2>
-            <button><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button>
+          <div className="contentHeader">
+            <span className="tag">Before & After</span>
+            <h2>See Our <span>Design</span></h2>
+            <div className="flex justify-between">
+              <h2><span>Transformations</span></h2>
+              <button className='viewBTN'><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button>
+            </div>
           </div>
           <div className="IMGBOX">
             <img src={TransformationsFrame} alt="" className='Frame' />
-            <Carousel infiniteLoop showIndicators={false} showThumbs={false}  emulateTouch={false} swipeable={false}>
+            <Carousel infiniteLoop showIndicators={false} showThumbs={false} emulateTouch={false} swipeable={false}>
               <div className="IMGBOX">
                 <img src={TransformationsFrame} alt="" className='Frame' />
                 <div className="compare-container">
@@ -306,15 +316,17 @@ export default function Home() {
         </div>
       </section>
       <section className='Testimonial'>
-        <span className="tag">Testimonial</span>
-        <h2>What <span>Our Client</span></h2>
-        <div className="flex justify-between">
-          <h2><span>Say About Us</span></h2>
-          <button><i className="bi-arrow-right-circle-fill"></i><span>View All Testimonial</span></button>
+        <div className="contentHeader">
+          <span className="tag">Testimonial</span>
+          <h2>What <span>Our Client</span></h2>
+          <div className="flex justify-between">
+            <h2><span>Say About Us</span></h2>
+            <button className='viewBTN'><i className="bi-arrow-right-circle-fill"></i><span>View All Testimonial</span></button>
+          </div>
         </div>
         <div className="IMGBOX">
           <img src={TestimonialFrame} alt="" className='Frame' />
-          <Carousel infiniteLoop showIndicators={false} showThumbs={false}  emulateTouch={false} swipeable={false}>
+          <Carousel infiniteLoop showIndicators={false} showThumbs={false} emulateTouch={false} swipeable={false}>
             <div className="IMGBOX">
               <img src={TestimonialFrame} alt="" className='Frame' />
               <img src="https://via.placeholder.com/600x400" alt="Image 1" className='Imgs' />
@@ -335,8 +347,10 @@ export default function Home() {
         </div>
       </section>
       <section className="contact-us container mx-auto">
-        <span className="tag">CONTACT US</span>
-        <h2>Get Your <span>Free Quote Today!</span></h2>
+        <div className="contentHeader">
+          <span className="tag">CONTACT US</span>
+          <h2>Get Your <span>Free Quote Today!</span></h2>
+        </div>
         <div className="flex contactBoxs">
           <div className="w-1/2">
             <form action="/submit_form" method="post">
@@ -356,7 +370,7 @@ export default function Home() {
                 <label htmlFor="message">Your Message *</label>
                 <textarea id="message" name="message" required></textarea>
               </div>
-              <button><i className="bi-arrow-right-circle-fill"></i><span>Send Message</span></button>
+              <button className='viewBTN'><i className="bi-arrow-right-circle-fill"></i><span>Send Message</span></button>
             </form>
           </div>
           <div className="w-1/2 padding">
@@ -387,8 +401,10 @@ export default function Home() {
         </div>
       </section>
       <section className='OutTeam container mx-auto'>
-        <span className="tag">Our team</span>
-        <h2>Meet Our <span>Expert Team</span></h2>
+        <div className="contentHeader">
+          <span className="tag">Our team</span>
+          <h2>Meet Our <span>Expert Team</span></h2>
+        </div>
         <div className="flex TeamBoxs">
           <div className="w-4/12 text-center px-2">
             <div className="imgBox">
