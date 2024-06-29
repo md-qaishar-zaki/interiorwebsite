@@ -13,8 +13,8 @@ html {
 }
 
 :root {
-    --primary-color: rgb(45 79 70);
+    --primary-color: #808080;
     --white-color: rgb(255, 255, 255);
-    --secondary-color: rgb(232 178 55);
+    --secondary-color: #FFA500;
     --text-color: #252725;
 }
