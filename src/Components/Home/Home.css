@@ -61,7 +61,7 @@
 }
 
 .main-Banner {
-    padding: 60px 80px;
+    padding: 60px 50px;
 }
 
 .Hero {
@@ -69,6 +69,68 @@
     top: 0;
     width: 100%;
     height: 100%;
+}
+
+.contentHeader {
+    width: 100%;
+}
+
+.contentHeader h2 {
+    font-size: 24px;
+    color: var(--text-color);
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.contentHeader h2 span {
+    font-family: "Tangerine", cursive;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.contentHeader .tag {
+    font-size: 24px;
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+    border-radius: 50%;
+}
+
+.viewBTN {
+    background: var(--text-color);
+    padding: 10px;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.viewBTN i {
+    position: absolute;
+    font-size: 34px;
+    top: 50%;
+    bottom: 50%;
+    display: flex;
+    left: 7px;
+    color: var(--white-color);
+    align-items: center;
+}
+
+.viewBTN span {
+    background-color: var(--secondary-color);
+    padding: 16px 25px;
+    margin: 0px -18px 0px 43px;
+    border-radius: 30px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .imgBox {
@@ -82,6 +144,7 @@
     position: relative;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .box {
@@ -127,84 +190,23 @@
     color: #898989;
 }
 
-.AboutUS h2 {
-    font-size: 55px;
-    color: var(--text-color);
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 68px;
-}
-
-.AboutUS h2 span {
-    font-family: "Tangerine", cursive;
-    color: var(--secondary-color);
-    font-weight: 700;
-}
-
-.AboutUS .tag {
-    font-size: 28px;
-    color: var(--text-color);
-    font-weight: 400;
-    letter-spacing: 2px;
-}
 
 .AboutUS .box h6 {
     font-size: 35px !important;
 }
 
+.AboutUS .AboutBox {
+    padding: 90px 110px !important;
+}
+
+.Services .contentHeader h2,
+.Services .contentHeader .tag {
+    color: var(--white-color) !important;
+}
+
 .Services {
     background: var(--primary-color);
     padding: 30px 0;
-}
-
-.Services .tag {
-    font-size: 28px;
-    color: var(--white-color);
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.Services h2 {
-    font-size: 55px;
-    color: var(--white-color);
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 68px;
-}
-
-.Services h2 span {
-    font-family: "Tangerine", cursive;
-    color: var(--secondary-color);
-    font-weight: 700;
-}
-
-.Services button {
-    background: var(--white-color);
-    padding: 10px;
-    width: 205px;
-    height: 44px;
-    border-radius: 30px;
-    position: relative;
-    margin-bottom: 10px;
-    overflow: hidden;
-}
-
-.Services button span {
-    background-color: var(--secondary-color);
-    padding: 16px 25px;
-    margin: 0px -55px 26px -4px;
-    border-radius: 30px;
-    color: var(--text-color);
-    font-size: 14px;
-    font-weight: 800;
-}
-
-.Services button i {
-    position: absolute;
-    font-size: 34px;
-    top: -2px;
-    left: 5px;
-    color: var(--primary-color);
 }
 
 .Services .content {
@@ -294,27 +296,6 @@
     text-align: center;
 }
 
-.OurWork .content .tag {
-    font-size: 28px;
-    color: var(--text-color);
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.OurWork .content h2 {
-    font-size: 40px;
-    color: var(--text-color);
-    font-weight: 700;
-    letter-spacing: 2px;
-    line-height: 50px;
-}
-
-.OurWork .content h2 span {
-    font-family: "Tangerine", cursive;
-    color: var(--secondary-color);
-    font-weight: 700;
-}
-
 .OurWork .boxs {
     width: 25%;
     text-align: center;
@@ -391,58 +372,9 @@
     background: rgb(245 245 245);
 }
 
-.OurProject button {
-    background: var(--primary-color);
-    padding: 10px;
-    width: 205px;
-    height: 44px;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.OurProject button i {
-    position: absolute;
-    font-size: 34px;
-    top: -2px;
-    left: 5px;
-    color: var(--white-color);
-}
-
-.OurProject button span {
-    background-color: var(--secondary-color);
-    padding: 16px 25px;
-    margin: 0px -55px 26px -4px;
-    border-radius: 30px;
-    color: var(--text-color);
-    font-size: 14px;
-    font-weight: 800;
-}
-
-.OurProject .tag {
-    font-size: 28px;
-    color: var(--text-color);
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.OurProject h2 {
-    font-size: 55px;
-    color: var(--text-color);
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 68px;
-}
-
-.OurProject h2 span {
-    font-family: "Tangerine", cursive;
-    color: var(--secondary-color);
-    font-weight: 700;
-}
-
 .OurProject .imgBox {
     position: relative;
-    width: 550px;
+    width: 100%;
     margin: auto;
 }
 
@@ -457,7 +389,7 @@
     position: absolute;
     bottom: 30px;
     left: 4px;
-    padding: 32px;
+    padding: 42px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0 0 0 / 80%));
 }
 
@@ -521,60 +453,15 @@
     content: unset !important;
 }
 
+.Transformations .contentHeader h2,
+.Transformations .contentHeader .tag {
+    color: var(--white-color) !important;
+}
+
 .Transformations {
     background: var(--primary-color);
     padding: 80px 100px;
 }
-
-.Transformations button {
-    background: var(--text-color);
-    padding: 10px;
-    width: 205px;
-    height: 44px;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.Transformations button i {
-    position: absolute;
-    font-size: 34px;
-    top: -2px;
-    left: 5px;
-    color: var(--white-color);
-}
-
-.Transformations button span {
-    background-color: var(--secondary-color);
-    padding: 16px 25px;
-    margin: 0px -55px 26px -4px;
-    border-radius: 30px;
-    color: var(--text-color);
-    font-size: 14px;
-    font-weight: 800;
-}
-
-.Transformations .tag {
-    font-size: 28px;
-    color: var(--white-color);
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.Transformations h2 {
-    font-size: 55px;
-    color: var(--white-color);
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 68px;
-}
-
-.Transformations h2 span {
-    font-family: "Tangerine", cursive;
-    color: var(--secondary-color);
-    font-weight: 700;
-}
-
 
 .Transformations .control-prev {
     background: var(--secondary-color) !important;
@@ -584,7 +471,8 @@
     align-items: center;
     justify-content: center;
     font-size: 42px !important;
-    margin: 45px 0px 0px 44px !important;
+    position: absolute;
+    bottom: 0;
 }
 
 .Transformations .control-next {
@@ -594,7 +482,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 413px 42px 0px 0px !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    margin: 0 !important;
+    top: unset !important;
     font-size: 42px !important;
 }
 
@@ -602,6 +493,10 @@
     position: absolute;
     top: 0;
     z-index: 1;
+}
+
+.carousel-status {
+    display: none !important;
 }
 
 .Transformations .carousel .control-arrow:before,
@@ -651,55 +546,6 @@
 .Testimonial {
     background: var(--white-color);
     padding: 80px 100px;
-}
-
-.Testimonial button {
-    background: var(--text-color);
-    padding: 10px;
-    width: 225px;
-    height: 44px;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.Testimonial button i {
-    position: absolute;
-    font-size: 34px;
-    top: -2px;
-    left: 5px;
-    color: var(--white-color);
-}
-
-.Testimonial button span {
-    background-color: var(--secondary-color);
-    padding: 16px 25px;
-    margin: 0px -55px 26px -4px;
-    border-radius: 30px;
-    color: var(--text-color);
-    font-size: 14px;
-    font-weight: 800;
-}
-
-.Testimonial .tag {
-    font-size: 28px;
-    color: var(--text-color);
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.Testimonial h2 {
-    font-size: 55px;
-    color: var(--text-color);
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 68px;
-}
-
-.Testimonial h2 span {
-    font-family: "Tangerine", cursive;
-    color: var(--secondary-color);
-    font-weight: 700;
 }
 
 .Testimonial .Imgs {
@@ -765,28 +611,6 @@
 .contact-us {
     background: rgb(245 245 245);
     padding: 80px 100px;
-}
-
-
-.contact-us .tag {
-    font-size: 28px;
-    color: var(--text-color);
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.contact-us h2 {
-    font-size: 55px;
-    color: var(--text-color);
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 68px;
-}
-
-.contact-us h2 span {
-    font-family: "Tangerine", cursive;
-    color: var(--secondary-color);
-    font-weight: 700;
 }
 
 .contact-us form {
@@ -873,62 +697,11 @@
 }
 
 
-.contact-us button {
-    background: var(--text-color);
-    padding: 10px;
-    width: 190px;
-    height: 44px;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.contact-us button i {
-    position: absolute;
-    font-size: 34px;
-    top: -2px;
-    left: 5px;
-    color: var(--white-color);
-}
-
-.contact-us button span {
-    background-color: var(--secondary-color);
-    padding: 16px 25px;
-    margin: 0px -55px 26px -4px;
-    border-radius: 30px;
-    color: var(--text-color);
-    font-size: 14px;
-    font-weight: 800;
-}
 
 
 .OutTeam {
     background: var(--white-color);
     padding: 80px 100px;
-}
-
-
-.OutTeam .tag {
-    font-size: 28px;
-    color: var(--text-color);
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.OutTeam h2 {
-    font-size: 55px;
-    color: var(--text-color);
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 68px;
-}
-
-.OutTeam h2 span {
-    font-family: "Tangerine", cursive;
-    color: var(--secondary-color) !important;
-    font-weight: 700 !important;
-    font-size: unset !important;
 }
 
 .OutTeam h3 {
@@ -957,9 +730,11 @@
 .OutTeam .socialMedia {
     position: absolute;
     bottom: 55px;
-    left: 50px;
-    margin: auto;
     transition: 0.3s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .imgBox:hover .socialMedia {
@@ -995,1030 +770,673 @@
 }
 
 
-
-
-@media (max-width: 375px) {
-    main .content .imgBox {
-        left: 147px !important;
-        opacity: 0.8;
+@media (max-width: 320px) {
+    .main-Banner {
+        padding: 40px 3px;
     }
 
-    /*------------------------ ThreeBox Css ------------------------ */
-    .threeBoxs .box {
-        padding: 18px 7px;
+    .main-Banner .contentBox {
+        padding: 0px 10px;
+        width: 100%;
+    }
+
+    .main-Banner .tag {
+        font-size: 18px;
+    }
+
+    .main-Banner h2 {
+        font-size: 27px;
+        line-height: 35px;
+        padding: 25px 0 0px 0;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .AbousResposive {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
-    .threeBoxs .box h6 {
-        font-size: 10px;
-    }
-
-    .threeBoxs .box p {
-        font-size: 8px;
-    }
-
-    .threeBoxs .box i {
-        font-size: 35px !important;
-        padding: 0px 16px;
-    }
-
-    .threeBoxs .box i {
-        font-size: 25px;
-    }
-
-    .threeBoxs .box i::after {
-        width: 25px;
-        height: 25px;
-        top: 13px;
-        right: 11px;
-    }
-
-    /* ------------------- About Us ------------------------ */
-    .AboutUS {
-        flex-direction: column;
-    }
-
-    .AboutUS .AboutBox {
+    .AbousResposive .w-1\/2 {
         width: 100%;
-        padding: 10px 18px !important;
+        padding: 20px 15px;
     }
 
-    .AboutUS h2 {
-        font-size: 30px !important;
-        line-height: 31px !important;
-    }
-
-    .AboutUS .tag {
-        font-size: 12px !important;
+    .contentHeader .tag {
+        font-size: 14px;
     }
 
     .AboutUS .box h6 {
-        font-size: 18px !important;
-    }
-
-    .AboutUS .box p {
-        font-size: 10px !important;
-    }
-
-    /* ----------------- Services ---------------- */
-    .Services h2 {
-        font-size: 18px !important;
-        line-height: 38px;
-    }
-
-    .Services .tag {
-        font-size: 20px;
+        font-size: 22px !important;
     }
 
     .Services .content {
-        padding: 0px 22px;
+        padding: 10px 10px;
     }
 
-    .AllBoxes {
-        padding: 20px 13px !important;
-        flex-wrap: wrap;
-        justify-content: center;
+    .viewBTN span {
+        padding: 11px 32px 11px 13px;
+        margin: -1px -18px 0px 39px;
+        font-size: 10px;
+        display: block;
     }
 
-    .Services .boxs {
-        width: 87% !important;
-        padding: 12px;
-        margin: 6px;
-        text-align: center;
+    .viewBTN {
+        padding: 0;
+        height: 35px;
     }
 
-    .Services .boxs h6 {
-        font-size: 18px;
-    }
-
-    .Services .boxs p {
-        font-size: 13px;
-    }
-
-    .Services .boxs img {
-        height: 210px !important;
-    }
-
-    .Services .boxs i {
-        right: 13px;
-        bottom: 12px;
+    .viewBTN i {
         font-size: 26px;
     }
 
-    .Services button {
-        margin-top: 5px;
-    }
-
-    .Services button span {
-        padding: 18px 14px;
-        font-size: 10px;
-    }
-
-    .Services button {
-        width: 149px;
-    }
-
-
-    /* ------------------- OurWork ------------------- */
-
-    .OurWork .content {
-        padding: 0px 20px 20px 20px !important;
-    }
-
-    .OurWork .content .tag {
-        font-size: 16px;
-    }
-
-    .pdBox {
-        padding: 0px 8px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .OurWork .boxs {
-        padding: 14px 10px;
-        width: 50%;
-    }
-
-    .OurWork .boxs .icon::after {
-        content: unset !important;
-    }
-
-    .OurWork .boxs p {
-        font-size: 12px;
-    }
-
-    .OurWork .boxs h6 {
-        font-size: 18px;
-    }
-
-    .OurWork .content h2 {
-        font-size: 20px !important;
-        line-height: 26px !important;
-    }
-
-    .OurWork .boxs .icon {
-        width: 70px;
-        height: 70px;
-    }
-
-    /* ----------------- OurProject ----------------- */
-    .OurProject h2 {
-        font-size: 18px;
-        line-height: 17px;
-    }
-
-    .OurProject .tag {
-        font-size: 14px;
-    }
-
-    .react-tabs ul {
-        padding: 0 10px;
-        justify-content: space-evenly;
-    }
-
-    .react-tabs__tab {
-        padding: 6px 10px !important;
-        margin: 0 !important;
-        font-size: 12px;
-    }
-
-    .OurProject .imgBox {
-        position: relative;
-        width: 100%;
-    }
-
-    .OurProject .imgBox .Details {
-        bottom: 12px;
-        padding: 22px;
-    }
-
-    .OurProject .imgBox .Details h4 {
-        font-size: 16px;
-        line-height: 1.3;
-    }
-
-    .OurProject .imgBox .Details button {
-        font-size: 12px !important;
-        margin: 4px;
-    }
-
-    .OurProject .imgBox i {
-        right: 18px;
-        bottom: 19px;
-        font-size: 27px;
-    }
-
-    .OurProject .pdBox {
-        display: flex !important;
-        padding: 0px 15px;
-    }
-
-    .w-1\/2 {
-        width: 100% !important;
-    }
-
-    .react-tabs ul {
-        height: 90px;
-    }
-
-    .OurProject button span {
-        padding: 20px 10px;
-        margin: 0px -55px 26px -4px;
-        font-size: 10px;
-    }
-
-    /* --------------------Transformations ----------------- */
-
-    .Transformations {
-        padding: 80px 17px;
-    }
-
-    .Transformations h2 {
-        font-size: 20px !important;
-        line-height: 18px !important;
-    }
-
-    .IMGBOX {
-        height: 296px;
-    }
-
-    .Transformations .control-next {
-        margin: 215px 15px 0px 0px !important;
-    }
-
-    .Transformations .control-prev {
-        margin: 33px 0px 0px 20px !important;
-    }
-
-    .Transformations .tag {
-        font-size: 10px;
-    }
-
-    .Transformations button {
-        width: 180px;
-    }
-
-    .Transformations button span {
-        padding: 18px 12px;
-    }
-
-    /* ------------------- Testimonial ------------------- */
-
-    .Testimonial {
-        padding: 22px 20px !important
-    }
-
-    .Testimonial h2 {
-        font-size: 20px !important;
-        line-height: 23px !important;
-    }
-
-    .Testimonial .control-prev {
-        margin: 90px 0px 0px -9px !important;
-        width: 35px !important;
-        height: 35px !important;
-    }
-
-    .Testimonial .control-next {
-        margin: 90px 0px 0px -9px !important;
-        width: 35px !important;
-        height: 35px !important;
-    }
-
-    .Testimonial .tag {
-        font-size: 18px;
-    }
-
-    .Testimonial button {
-        width: 165px;
-    }
-
-    .Testimonial button span {
-        padding: 20px 8px;
-        font-size: 10px;
-    }
-
-    .Testimonial .IMGBOX {
-        height: 196px !important;
-    }
-
-    /* ------------------ contact -------------------- */
-    .contact-us {
-        padding: 20px 16px;
-    }
-
-    .contactBoxs {
-        flex-direction: column-reverse;
-    }
-
-    .contactBoxs .w-1\/2 {
-        width: 100%;
-    }
-
-    .contact-us .padding {
-        padding: 0px 0px 0px 0px;
-    }
-
-    .contact-us .address-container {
-        padding: 18px 20px 30px 32px;
-    }
-
-    .contact-us h2 {
-        font-size: 18px !important;
-        line-height: 30px !important;
-    }
-
-    .contact-us .tag {
-        font-size: 14px;
-    }
-
-    .contact-us .address-container h3 {
-        font-size: 16px !important;
-        line-height: 23px !important;
-    }
-
-    .contact-us .icons i {
-        width: 30px !important;
-        height: 30px !important;
-        font-size: 15px !important;
-        margin: 7px 5px !important;
-    }
-}
-
-@media (max-width: 575.98px) {
-    main .content .imgBox {
-        width: 50%;
-        position: absolute;
-        top: 60px;
-        left: 212px;
-    }
-
-    .main-Banner .contentBox {
-        padding: 0px 5px 0px 35px;
-        width: 100%;
-        z-index: 4;
-    }
-
-    .main-Banner h2 {
-        font-size: 24px;
-        color: var(--white-color);
-        font-weight: 600;
-        letter-spacing: 2px;
-        line-height: 30px;
-        text-shadow: 1px 1px 5px #000;
-    }
-
-    .main-Banner p {
-        font-size: 12px;
-        padding: 10px 0;
-        text-shadow: 1px 1px 3px #000;
-    }
-
-    .main-Banner button {
-        width: 120px;
-        padding: 3px 4px 6px 4px;
-    }
-
-    .main-Banner button span {
-        padding: 10px 12px;
-        margin: 0px -55px 26px -4px;
-        font-size: 10px;
-    }
-
-    .main-Banner button i {
-        position: absolute;
-        font-size: 27.5px;
-    }
-
-    /*------------------------ ThreeBox Css ------------------------ */
-
-    .threeBoxs .box h6 {
-        font-size: 10px;
-    }
-
-    .threeBoxs .box p {
-        font-size: 8px;
-    }
-
-    .threeBoxs .box i {
-        font-size: 35px;
-        padding: 0px 16px;
-    }
-
-    .threeBoxs .box i {
-        font-size: 25px;
-    }
-
-    .threeBoxs .box i::after {
-        width: 25px;
-        height: 25px;
-        top: 13px;
-        right: 11px;
-    }
-
-    /* ------------------- About Us ------------------------ */
-    .AboutUS {
+    .Services .AllBoxes {
         flex-direction: column;
     }
 
-    .AboutUS .AboutBox {
-        width: 100%;
-        padding: 10px 53px;
-    }
-
-    .AboutUS h2 {
-        font-size: 32px;
-        line-height: 32px;
-        margin-bottom: 20px;
-    }
-
-    .AboutUS .tag {
-        font-size: 18px;
-    }
-
-    .AboutUS .box h6 {
-        font-size: 20px !important;
-    }
-
-    /* ----------------- Services ---------------- */
-    .Services h2 {
-        font-size: 28px;
-        line-height: 38px;
-    }
-
-    .Services .tag {
-        font-size: 20px;
-    }
-
-    .Services .content {
-        padding: 0px 22px;
-    }
-
-    .AllBoxes {
-        padding: 20px 13px !important;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .Services .boxs {
-        width: 47%;
-        padding: 12px;
-        margin: 6px;
-        text-align: center;
+        width: 97%;
     }
-
-    .Services .boxs h6 {
-        font-size: 18px;
-    }
-
-    .Services .boxs p {
-        font-size: 13px;
-    }
-
-    .Services .boxs img {
-        height: 180px;
-    }
-
-    .Services .boxs i {
-        right: 13px;
-        bottom: 12px;
-        font-size: 26px;
-    }
-
-    .Services button {
-        margin-top: 5px;
-    }
-
-    /* ------------------- OurWork ------------------- */
 
     .OurWork .content {
-        padding: 0px 40px 40px 40px;
-    }
-
-    .pdBox {
-        padding: 0px 8px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .OurWork .boxs {
-        padding: 14px 10px;
-        width: 50%;
-    }
-
-    .OurWork .boxs .icon::after {
-        content: unset !important;
-    }
-
-    .OurWork .boxs p {
-        font-size: 12px;
-    }
-
-    .OurWork .boxs h6 {
-        font-size: 18px;
-    }
-
-    .OurWork .content h2 {
-        font-size: 30px;
-        line-height: 36px;
-    }
-
-    .OurWork .boxs .icon {
-        width: 70px;
-        height: 70px;
-    }
-
-    /* ----------------- OurProject ----------------- */
-    .OurProject h2 {
-        font-size: 18px;
-        line-height: 17px;
-    }
-
-    .OurProject .tag {
-        font-size: 14px;
-    }
-
-    .react-tabs ul {
-        padding: 0 10px;
-        justify-content: space-evenly;
-        margin-bottom: 40px;
-    }
-
-    .react-tabs__tab {
-        padding: 6px 10px !important;
-        margin: 3px !important;
-        font-size: 12px;
-    }
-
-    .OurProject .imgBox {
-        position: relative;
-        width: 100%;
-    }
-
-    .OurProject .imgBox .Details {
-        bottom: 12px;
-        padding: 11px;
-    }
-
-    .OurProject .imgBox .Details h4 {
-        font-size: 12px;
-        line-height: 1.1;
-    }
-
-    .OurProject .imgBox .Details button {
-        font-size: 10px !important;
-        margin: 4px 2px;
-    }
-
-    .OurProject .imgBox i {
-        right: 14px;
-        bottom: 12px;
-        font-size: 22px;
-    }
-
-    .OurProject .pdBox {
-        display: flex !important;
-        padding: 0px 15px;
-    }
-
-
-    /* --------------------Transformations ----------------- */
-
-    .Transformations {
-        padding: 80px 17px;
-    }
-
-    .Transformations h2 {
-        font-size: 45px;
-        line-height: 48px;
-    }
-
-    .IMGBOX {
-        height: 296px;
-    }
-
-    .Transformations .control-next {
-        margin: 215px 15px 0px 0px !important;
-    }
-
-    .Transformations .control-prev {
-        margin: 33px 0px 0px 20px !important;
-    }
-
-    /* ------------------- Testimonial ------------------- */
-
-    .Testimonial {
-        padding: 40px 30px
-    }
-
-    .Testimonial h2 {
-        font-size: 35px;
-        line-height: 30px;
-    }
-
-    .Testimonial .control-prev {
-        margin: 120px 0px 0px 2px !important;
-    }
-
-    .Testimonial .control-next {
-        margin: 122px 7px 0px 0px !important;
-    }
-
-    .Testimonial .tag {
-        font-size: 18px;
-    }
-
-    /* ------------------ contact -------------------- */
-    .contact-us {
-        padding: 20px 16px;
-    }
-
-    .contactBoxs {
-        flex-direction: column-reverse;
-    }
-
-    .contactBoxs .w-1\/2 {
-        width: 100%;
-    }
-
-    .contact-us .padding {
-        padding: 0px 0px 0px 0px;
-    }
-
-    .contact-us .address-container {
-        background-size: contain;
-    }
-
-    .contact-us h2 {
-        font-size: 34px;
-    }
-
-    .contact-us .tag {
-        font-size: 14px;
-    }
-
-    .contact-us .address-container h3 {
-        font-size: 18px;
-        line-height: 38px;
-    }
-
-    /* -----------------------------OutTeam -------------------------- */
-    .OutTeam {
-        padding: 40px 20px;
-    }
-
-    .OutTeam h2 {
-        font-size: 25px;
-        line-height: 36px;
-    }
-
-    .OutTeam .tag {
-        font-size: 18px;
-    }
-
-    .OutTeam .socialMedia {
-        bottom: 35px !important;
-        left: 0px;
-        padding: 0 50px;
-    }
-
-    .OutTeam .socialMedia i {
-        width: 25px;
-        height: 25px;
-        font-size: 10px;
-        margin: 0px 4px;
-    }
-
-    .OutTeam h3 {
-        font-size: 14px;
-    }
-
-    .OutTeam span {
-        font-size: 12px;
-    }
-
-    .TeamBoxs {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .w-4\/12 {
-        width: 50%;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-    main .content .imgBox {
-        width: 290px;
-        position: absolute;
-        top: 20px;
-    }
-
-    .main-Banner .contentBox {
-        padding: 0px 35px;
-    }
-
-    .main-Banner h2 {
-        font-size: 31px;
-        color: var(--white-color);
-        font-weight: 600;
-        letter-spacing: 2px;
-        line-height: 43px;
-    }
-
-    .main-Banner p {
-        font-size: 12px;
-        padding: 10px 0
-    }
-
-    .main-Banner button {
-        width: 140px;
-    }
-
-    .main-Banner button span {
-        padding: 16px 12px;
-        margin: 0px -55px 26px -4px;
-        font-size: 12px;
-    }
-
-    /*------------------------ ThreeBox Css ------------------------ */
-
-    .threeBoxs .box h6 {
-        font-size: 12px;
-    }
-
-    .threeBoxs .box p {
-        font-size: 10px;
-    }
-
-    .threeBoxs .box i {
-        font-size: 35px;
-        padding: 0px 16px;
-    }
-
-    /* ------------------- About Us ------------------------ */
-    .AboutUS {
-        flex-direction: column;
-    }
-
-    .AboutUS .AboutBox {
-        width: 100%;
-        padding: 10px 53px;
-    }
-
-    .AboutUS h2 {
-        font-size: 37px;
-        line-height: 40px;
-    }
-
-    .AboutUS .tag {
-        font-size: 18px;
-    }
-
-    .AboutUS .box h6 {
-        font-size: 28px !important;
-    }
-
-    /* ----------------- Services ---------------- */
-    .Services h2 {
-        font-size: 28px;
-        line-height: 38px;
-    }
-
-    .Services .tag {
-        font-size: 20px;
-    }
-
-    .Services .content {
-        padding: 0px 22px;
-    }
-
-    .AllBoxes {
-        padding: 20px 13px !important;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .Services .boxs {
-        width: 47%;
-        padding: 12px;
-        margin: 6px;
-        text-align: center;
-    }
-
-    .Services .boxs h6 {
-        font-size: 18px;
-    }
-
-    .Services .boxs p {
-        font-size: 13px;
-    }
-
-    .Services .boxs img {
-        height: 180px;
-    }
-
-    .Services .boxs i {
-        right: 13px;
-        bottom: 12px;
-        font-size: 26px;
-    }
-
-    /* ------------------- OurWork ------------------- */
-
-    .OurWork .content {
-        padding: 0px 40px 40px 40px;
+        padding: 0;
     }
 
     .pdBox {
         padding: 0px 20px;
+        flex-wrap: wrap;
     }
 
     .OurWork .boxs {
-        padding: 0px 10px;
+        width: 50%;
+        padding: 6px;
     }
 
     .OurWork .boxs .icon::after {
-        width: 30px;
-        right: -47px;
+        content: unset !important;
     }
 
-    .OurWork .boxs p {
-        font-size: 12px;
-    }
-
-    .OurWork .boxs h6 {
-        font-size: 18px;
-    }
-
-    /* ----------------- OurProject ----------------- */
-    .OurProject h2 {
-        font-size: 28px;
-        line-height: 35px;
-    }
-
-    .OurProject .tag {
-        font-size: 14px;
+    .contentHeader h2 {
+        font-size: 16px;
+        line-height: 14px;
     }
 
     .react-tabs ul {
-        padding: 0 10px;
-        justify-content: space-evenly;
+        display: unset;
+        padding: 0;
     }
 
-    .react-tabs__tab {
-        padding: 6px 10px !important;
-        margin: 0 !important;
-        font-size: 12px;
-    }
-
-    .OurProject .imgBox {
-        position: relative;
+    .react-tabs__tab-panel .pdBox .w-1\/2 {
         width: 100%;
     }
 
-    .OurProject .imgBox .Details {
-        bottom: 12px;
-        padding: 22px;
+    .OurProject .imgBox i {
+        right: 25px;
+        bottom: 30px;
+        font-size: 38px;
     }
 
-    .OurProject .imgBox .Details h4 {
-        font-size: 16px;
-        line-height: 1.3;
+    .OurProject .imgBox .Details {
+        bottom: 20px;
     }
 
     .OurProject .imgBox .Details button {
-        font-size: 12px !important;
         margin: 4px;
     }
 
-    .OurProject .imgBox i {
-        right: 20px;
-        bottom: 21px;
-        font-size: 30px;
+    .react-tabs__tab {
+        font-size: 12px;
+        margin: 4px;
     }
-
-    /* --------------------Transformations ----------------- */
 
     .Transformations {
-        padding: 80px 17px;
-    }
-
-    .Transformations h2 {
-        font-size: 45px;
-        line-height: 48px;
+        padding: 30px 5px;
     }
 
     .IMGBOX {
-        height: 366px;
+        height: 210px;
     }
 
-    .Transformations .control-next {
-        margin: 280px 26px 0px 0px !important;
+    .carousel .control-arrow,
+    .carousel.carousel-slider .control-arrow {
+        font-size: 18px !important;
+        width: 25px;
+        height: 25px;
+        margin: 10px !important;
     }
-
-    /* ------------------- Testimonial ------------------- */
 
     .Testimonial {
-        padding: 40px 30px
+        background: var(--white-color);
+        padding: 50px 18px;
     }
 
-    .Testimonial h2 {
-        font-size: 35px;
-        line-height: 30px;
+    .carousel.carousel-slider .control-next {
+        top: 77% !important;
     }
 
-    .Testimonial .control-prev {
-        margin: 180px 0px 0px 2px !important;
-    }
-
-    .Testimonial .control-next {
-        margin: 185px 7px 0px 0px !important;
-    }
-
-    .Testimonial .tag {
-        font-size: 18px;
-    }
-
-    /* ------------------ contact -------------------- */
     .contact-us {
-        padding: 40px 40px;
-    }
-
-    .contactBoxs {
-        flex-direction: column-reverse;
+        padding: 14px 0px;
     }
 
     .contactBoxs .w-1\/2 {
         width: 100%;
     }
 
+    .contactBoxs {
+        flex-direction: column-reverse;
+    }
+
     .contact-us .padding {
-        padding: 0px 0px 0px 0px;
+        padding: 0;
+        margin: 11px 0px 9px -5px;
     }
 
-    .contact-us .address-container {
-        background-size: contain;
+    .contact-us form {
+        padding: 30px;
     }
 
-    .contact-us h2 {
-        font-size: 40px;
+    .contentHeader {
+        padding: 0 20px;
     }
 
-    .contact-us .tag {
-        font-size: 14px;
-    }
-
-    /* -----------------------------OutTeam -------------------------- */
     .OutTeam {
-        padding: 40px 20px;
+        background: var(--white-color);
+        padding: 30px 0px;
     }
 
-    .OutTeam h2 {
-        font-size: 25px;
-        line-height: 36px;
+    .TeamBoxs {
+        flex-direction: column;
     }
 
-    .OutTeam .tag {
-        font-size: 18px;
+    .TeamBoxs .w-4\/12 {
+        width: 100%;
+        margin-bottom: 15px;
     }
 
-    .OutTeam .socialMedia {
-        bottom: 35px;
-        left: 0px;
-        padding: 0 15px;
-    }
-
-    .OutTeam .socialMedia i {
-        width: 25px;
-        height: 25px;
-        font-size: 10px;
-        margin: 0px 4px;
-    }
-
-    .OutTeam h3 {
-        font-size: 14px;
-    }
-
-    .OutTeam span {
-        font-size: 12px;
+    .imgBox .socialMedia {
+        bottom: 50px;
+        left: 0 !important;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (max-width: 375px) and (min-width: 321px) {
+    .main-Banner {
+        padding: 40px 3px;
+    }
+
+    .main-Banner .contentBox {
+        padding: 0px 10px;
+        width: 100%;
+    }
+
+    .main-Banner .tag {
+        font-size: 18px;
+    }
+
+    .main-Banner h2 {
+        font-size: 27px;
+        line-height: 35px;
+        padding: 25px 0 0px 0;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .AbousResposive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AbousResposive .w-1\/2 {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .contentHeader .tag {
+        font-size: 14px;
+    }
+
+    .AboutUS .box h6 {
+        font-size: 22px !important;
+    }
+
+    .Services .content {
+        padding: 10px 10px;
+    }
+
+    .viewBTN span {
+        padding: 11px 32px 11px 13px;
+        margin: -1px -18px 0px 39px;
+        font-size: 10px;
+        display: block;
+    }
+
+    .viewBTN {
+        padding: 0;
+        height: 35px;
+    }
+
+    .viewBTN i {
+        font-size: 26px;
+    }
+
+    .Services .AllBoxes {
+        flex-direction: column;
+    }
+
+    .Services .boxs {
+        width: 97%;
+    }
+
+    .OurWork .content {
+        padding: 0;
+    }
+
+    .pdBox {
+        padding: 0px 20px;
+        flex-wrap: wrap;
+    }
+
+    .OurWork .boxs {
+        width: 50%;
+        padding: 6px;
+    }
+
+    .OurWork .boxs .icon::after {
+        content: unset !important;
+    }
+
+    .contentHeader h2 {
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    .react-tabs ul {
+        display: unset;
+        padding: 0;
+    }
+
+    .react-tabs__tab-panel .pdBox .w-1\/2 {
+        width: 100%;
+    }
+
+    .OurProject .imgBox i {
+        right: 25px;
+        bottom: 30px;
+        font-size: 38px;
+    }
+
+    .OurProject .imgBox .Details {
+        bottom: 20px;
+    }
+
+    .OurProject .imgBox .Details button {
+        margin: 4px;
+    }
+
+    .react-tabs__tab {
+        font-size: 12px;
+        margin: 4px;
+    }
+
+    .Transformations {
+        padding: 30px 5px;
+    }
+
+    .IMGBOX {
+        height: 210px;
+    }
+
+    .carousel .control-arrow,
+    .carousel.carousel-slider .control-arrow {
+        font-size: 18px !important;
+        width: 25px;
+        height: 25px;
+        margin: 10px !important;
+    }
+
+    .Testimonial {
+        background: var(--white-color);
+        padding: 50px 18px;
+    }
+
+    .carousel.carousel-slider .control-next {
+        top: 77% !important;
+    }
+
+    .contact-us {
+        padding: 14px 0px;
+    }
+
+    .contactBoxs .w-1\/2 {
+        width: 100%;
+    }
+
+    .contactBoxs {
+        flex-direction: column-reverse;
+    }
+
+    .contact-us .padding {
+        padding: 0;
+        margin: 11px 0px 9px -5px;
+    }
+
+    .contact-us form {
+        padding: 30px;
+    }
+
+    .contentHeader {
+        padding: 0 20px;
+    }
+
+    .OutTeam {
+        background: var(--white-color);
+        padding: 30px 0px;
+    }
+
+    .TeamBoxs {
+        flex-direction: column;
+    }
+
+    .TeamBoxs .w-4\/12 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .imgBox .socialMedia {
+        bottom: 50px;
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
+    .main-Banner {
+        padding: 40px 3px;
+    }
+
+    .main-Banner .contentBox {
+        padding: 0px 10px;
+        width: 100%;
+    }
+
+    .main-Banner .tag {
+        font-size: 18px;
+    }
+
+    .main-Banner h2 {
+        font-size: 27px;
+        line-height: 35px;
+        padding: 25px 0 0px 0;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .AbousResposive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AbousResposive .w-1\/2 {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .contentHeader .tag {
+        font-size: 14px;
+    }
+
+    .AboutUS .box h6 {
+        font-size: 22px !important;
+    }
+
+    .Services .content {
+        padding: 10px 10px;
+    }
+
+    .viewBTN span {
+        padding: 11px 32px 11px 13px;
+        margin: -1px -18px 0px 39px;
+        font-size: 10px;
+        display: block;
+    }
+
+    .viewBTN {
+        padding: 0;
+        height: 35px;
+    }
+
+    .viewBTN i {
+        font-size: 26px;
+    }
+
+    .Services .AllBoxes {
+        flex-direction: column;
+    }
+
+    .Services .boxs {
+        width: 97%;
+    }
+
+    .OurWork .content {
+        padding: 0;
+    }
+
+    .pdBox {
+        padding: 0px 20px;
+        flex-wrap: wrap;
+    }
+
+    .OurWork .boxs {
+        width: 50%;
+        padding: 6px;
+    }
+
+    .OurWork .boxs .icon::after {
+        content: unset !important;
+    }
+
+    .contentHeader h2 {
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    .react-tabs ul {
+        display: unset;
+        padding: 0;
+    }
+
+    .react-tabs__tab-panel .pdBox .w-1\/2 {
+        width: 100%;
+    }
+
+    .OurProject .imgBox i {
+        right: 25px;
+        bottom: 30px;
+        font-size: 38px;
+    }
+
+    .OurProject .imgBox .Details {
+        bottom: 20px;
+    }
+
+    .OurProject .imgBox .Details button {
+        margin: 4px;
+    }
+
+    .react-tabs__tab {
+        font-size: 12px;
+        margin: 4px;
+    }
+
+    .Transformations {
+        padding: 30px 5px;
+    }
+
+    .IMGBOX {
+        height: 210px;
+    }
+
+    .carousel .control-arrow,
+    .carousel.carousel-slider .control-arrow {
+        font-size: 18px !important;
+        width: 25px;
+        height: 25px;
+        margin: 10px !important;
+    }
+
+    .Testimonial {
+        background: var(--white-color);
+        padding: 50px 18px;
+    }
+
+    .carousel.carousel-slider .control-next {
+        top: 77% !important;
+    }
+
+    .contact-us {
+        padding: 14px 0px;
+    }
+
+    .contactBoxs .w-1\/2 {
+        width: 100%;
+    }
+
+    .contactBoxs {
+        flex-direction: column-reverse;
+    }
+
+    .contact-us .padding {
+        padding: 0;
+        margin: 11px 0px 9px -5px;
+    }
+
+    .contact-us form {
+        padding: 30px;
+    }
+
+    .contentHeader {
+        padding: 0 20px;
+    }
+
+    .OutTeam {
+        background: var(--white-color);
+        padding: 30px 0px;
+    }
+
+    .TeamBoxs {
+        flex-direction: column;
+    }
+
+    .TeamBoxs .w-4\/12 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .imgBox .socialMedia {
+        bottom: 50px;
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 550px) and (min-width: 425px) {
+    .AllBoxes {
+        flex-direction: column;
+    }
+
+    .Services .boxs {
+        width: 100%;
+    }
+
+    .pdBox {
+        padding: 0px 20px;
+        flex-wrap: wrap;
+    }
+
+    .OurWork .boxs {
+        width: 50%;
+        padding: 6px;
+    }
+
+    .OurWork .boxs .icon::after {
+        content: unset;
+    }
+
+    .OurProject .pdBox {
+        margin-top: 50px;
+    }
+
+    .TeamBoxs {
+        flex-direction: column;
+    }
+
+    .TeamBoxs .w-4\/12 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .imgBox .socialMedia {
+        bottom: 50px;
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+
+    .contentHeader h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .contentHeader .tag {
+        font-size: 16px;
+    }
+
+    .viewBTN span {
+        padding: 18px 18px;
+        margin: 0px -18px 0px 43px;
+        font-size: 12px;
+    }
+
+    .main-Banner {
+        padding: 27px 0px;
+    }
 
     main .content .imgBox {
-        width: 380px;
+        width: 100%;
         top: 30px;
     }
 
     .main-Banner .contentBox {
-        padding: 60px 50px;
+        padding: 10px 30px;
     }
 
     .main-Banner h2 {
@@ -2049,31 +1467,20 @@
     }
 
     /* ------------------- About Us ------------------------ */
-    .AboutUS {
-        flex-direction: column;
-    }
-
     .AboutUS .AboutBox {
         width: 100%;
         padding: 10px 53px;
     }
 
-    .AboutUS h2 {
-        font-size: 41px;
+    .AbousResposive {
+        flex-direction: column;
     }
 
     /* ----------------- Services ---------------- */
-    .Services h2 {
-        font-size: 40px;
-        line-height: 47px;
-    }
 
-    .Services .tag {
-        font-size: 20px;
-    }
 
     .Services .content {
-        padding: 20px 62px;
+        padding: 20px 24px;
     }
 
     .AllBoxes {
@@ -2095,7 +1502,7 @@
     }
 
     .Services .boxs img {
-        height: 180px;
+        height: 100%;
     }
 
     .Services .boxs i {
@@ -2128,14 +1535,7 @@
     }
 
     /* ----------------- OurProject ----------------- */
-    .OurProject h2 {
-        font-size: 45px;
-        line-height: 51px;
-    }
 
-    .OurProject .tag {
-        font-size: 20px;
-    }
 
     .react-tabs ul {
         padding: 0 10px;
@@ -2143,77 +1543,72 @@
     }
 
     .react-tabs__tab {
-        padding: 6px 19px !important;
+        padding: 6px 9px !important;
         margin: 0 !important;
     }
 
     .OurProject .imgBox {
         position: relative;
-        width: 340px;
+        width: 100%;
     }
 
     .OurProject .imgBox .Details {
-        bottom: 12px;
-        padding: 22px;
+        bottom: 11px;
+        padding: 11px;
     }
 
     .OurProject .imgBox .Details h4 {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1;
     }
 
     .OurProject .imgBox .Details button {
-        font-size: 12px !important;
+        font-size: 10px !important;
         margin: 4px;
     }
 
     .OurProject .imgBox i {
-        right: 17px;
-        bottom: 30px;
-        font-size: 35px;
+        right: 12px;
+        bottom: 8px;
+        font-size: 30px;
     }
 
     /* --------------------Transformations ----------------- */
 
     .Transformations {
-        padding: 53px 40px;
-    }
-
-    .Transformations h2 {
-        font-size: 45px;
-        line-height: 48px;
+        padding: 53px 20px;
     }
 
     .IMGBOX {
         height: 100%;
     }
 
-    .Transformations .control-next {
-        margin: 347px 42px 0px 0px !important;
+    .carousel .control-arrow,
+    .carousel.carousel-slider .control-arrow {
+        border-radius: 50%;
+        font-size: 27px !important;
+        width: 35px;
+        height: 35px;
     }
 
     /* ------------------- Testimonial ------------------- */
 
     .Testimonial {
-        padding: 60px 40px;
+        padding: 53px 20px;
     }
 
-    .Testimonial h2 {
-        font-size: 45px;
-        line-height: 50px;
-    }
 
     .Testimonial .control-prev {
-        margin: 180px 0px 0px 2px !important;
+        margin: 107px 0px 0px 1px !important;
     }
 
     .Testimonial .control-next {
-        margin: 185px 7px 0px 0px !important;
+        margin: 107px 0px 0px 1px !important;
     }
 
     /* ------------------ contact -------------------- */
     .contact-us {
-        padding: 40px 40px;
+        padding: 53px 20px;
     }
 
     .contactBoxs {
@@ -2232,39 +1627,22 @@
         background-size: contain;
     }
 
-    .contact-us h2 {
-        font-size: 40px;
-    }
-
-    .contact-us .tag {
-        font-size: 14px;
-    }
-
     /* -----------------------------OutTeam -------------------------- */
     .OutTeam {
         padding: 40px 20px;
     }
 
-    .OutTeam h2 {
-        font-size: 35px;
-        line-height: 38px;
-    }
-
-    .OutTeam .tag {
-        font-size: 18px;
-    }
-
     .OutTeam .socialMedia {
         bottom: 35px;
         left: 0px;
-        padding: 0 17px;
+        padding: 0 8px;
     }
 
     .OutTeam .socialMedia i {
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
-        margin: 0px 5px;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        margin: 0px 4px;
     }
 
     .OutTeam h3 {
