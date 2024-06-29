@@ -61,7 +61,7 @@
 }
 
 .main-Banner {
-    padding: 60px 80px;
+    padding: 60px 50px;
 }
 
 .Hero {
@@ -193,6 +193,10 @@
 
 .AboutUS .box h6 {
     font-size: 35px !important;
+}
+
+.AboutUS .AboutBox {
+    padding: 90px 110px !important;
 }
 
 .Services .contentHeader h2,

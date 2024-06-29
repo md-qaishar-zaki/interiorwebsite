@@ -20,7 +20,7 @@ export default function Services() {
           <h2>Services Include</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto magnam natus repudiandae obcaecati quam illum iusto tenetur corrupti sint voluptas? Facere deserunt impedit possimus quos dolorem libero. Dolorem repudiandae quaerat, porro maiores neque atque, molestiae enim maxime veritatis quam laboriosam laborum ratione dolore est ipsam voluptatem ipsa quo eveniet aspernatur?</p>
 
-          <div className="flex justify-between">
+          <div className="flex justify-between IncludeBoxList">
             <div className="flex flex-col IncludeBoxes">
               <div className="flex items-center mb-1">
                 <i class="bi-check-circle-fill"></i>

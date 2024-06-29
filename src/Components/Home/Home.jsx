@@ -12,8 +12,9 @@ import ContactFrame from '../../Assets/Contact-Frame.png';
 import TeamFrame from '../../Assets/TeamFrame.png';
 import 'react-tabs/style/react-tabs.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import AboutIMG from '../../Assets/aboutIMG.png';
 
 
 export default function Home() {
@@ -67,7 +68,9 @@ export default function Home() {
       </div>
       <section className='AboutUS'>
         <div className="container mx-auto flex AbousResposive">
-          <div className="w-1/2 AboutBox"></div>
+          <div className="w-1/2 flex items-center	justify-center">
+          <img src={AboutIMG} alt="" />
+          </div>
           <div className="w-1/2 AboutBox">
             <div className="contentHeader">
               <span className='tag'>ABOUT US</span>

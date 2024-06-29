@@ -214,3 +214,184 @@
         font-weight: 700;
     }
 }
+
+
+@media (max-width: 320px) {
+    .ProjectJourney {
+        height: 120px;
+        padding: 10px 30px;
+    }
+
+    .ProjectJourney h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    #services {
+        padding: 0px 10px;
+    }
+
+    #services .imgBox {
+        height: 180px;
+    }
+
+    #services .serviceAbout span {
+        background-color: var(--secondary-color);
+        height: 30px;
+        width: 108px;
+    }
+
+    #services .IncludeIMG .imgBox {
+        width: 100%;
+        height: 100%;
+    }
+
+    #services .Hospitality .borderbox:first-child {
+        border-left: 1px solid;
+    }
+}
+
+@media (max-width: 375px) and (min-width: 321px) {
+    .ProjectJourney {
+        height: 140px;
+        padding: 10px 30px;
+    }
+
+    .ProjectJourney h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    #services {
+        padding: 0px 10px;
+    }
+
+    #services .serviceAbout span {
+        width: 88px;
+    }
+
+    #services .IncludeIMG .imgBox {
+        height: 200px;
+    }
+
+    #services .Hospitality .borderbox:first-child {
+        border-left: 1px solid;
+    }
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
+    #services {
+        padding: 0px 15px;
+    }
+
+    #services .imgBox {
+        height: 240px;
+    }
+
+    #services .serviceAbout span {
+        width: 20% !important;
+    }
+
+    .IncludeBoxList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #services .IncludeIMG .imgBox {
+        height: 260px;
+    }
+
+    #services .Hospitality .borderbox:first-child {
+        border-left: 1px solid;
+    }
+
+    .ProjectJourney {
+        height: 160px;
+        padding: 10px 20px;
+    }
+
+    .ProjectJourney h2 {
+        font-size: 35px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 550px) and (min-width: 425px) {
+    #services .imgBox {
+        height: 330px;
+    }
+
+    #services .serviceAbout span {
+        width: 13% !important;
+    }
+
+    #services .IncludeBoxes {
+        width: 46%;
+    }
+
+    .IncludeBoxList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ProjectJourney {
+        padding: 10px 20px !important;
+    }
+
+    .ProjectJourney h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    #services {
+        padding: 0px 20px;
+    }
+
+    #services .serviceAbout span {
+        width: 47px;
+    }
+
+    #services .IncludeIMG .imgBox {
+        height: 270px;
+    }
+
+    .ProjectJourney {
+        height: 300px;
+        padding: 10px 130px;
+    }
+}
+
+@media (min-width: 915px) and (max-width: 1199.98px) {
+    #services {
+        padding: 0px 0px;
+    }
+
+    #services .imgBox {
+        width: 100%;
+        height: 470px;
+    }
+
+    #services .serviceAbout span {
+        height: 30px;
+        width: 50px;
+    }
+
+    #services .IncludeIMG .imgBox {
+        width: 100%;
+        height: 260px;
+    }
+
+    .ProjectJourney {
+        height: 220px;
+        padding: 10px 190px;
+    }
+
+    .toggleMenu {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media (min-width: 1400px) {}

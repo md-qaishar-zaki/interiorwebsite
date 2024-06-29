@@ -38,7 +38,7 @@ export default function Header() {
             <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
           </a>
-          <button className="text-gray-700 lg:hidden" onClick={toggleMenu}>
+          <button className="text-gray-700 lg:hidden toggleMenu" onClick={toggleMenu}>
             <i className="bi-list text-2xl"></i>
           </button>
           <ul className="hidden lg:flex lg:flex-row lg:space-x-8">
