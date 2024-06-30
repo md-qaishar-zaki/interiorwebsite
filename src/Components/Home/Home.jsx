@@ -8,6 +8,7 @@ import ProjectFrame from '../../Assets/ProjectFrame.png';
 import Project from '../../Assets/project1.jpg';
 import TransformationsFrame from '../../Assets/TransformationsFrame.png';
 import TestimonialFrame from '../../Assets/TestimonialFrame.png';
+import TestimonialIMG from '../../Assets/TestimonialIMG.png';
 import ContactFrame from '../../Assets/Contact-Frame.png';
 import TeamFrame from '../../Assets/TeamFrame.png';
 import 'react-tabs/style/react-tabs.css';
@@ -66,10 +67,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className='AboutUS'>
+      <section id='About' className='AboutUS'>
         <div className="container mx-auto flex AbousResposive">
           <div className="w-1/2 flex items-center	justify-center">
-          <img src={AboutIMG} alt="" />
+            <img src={AboutIMG} alt="" />
           </div>
           <div className="w-1/2 AboutBox">
             <div className="contentHeader">
@@ -197,7 +198,7 @@ export default function Home() {
           </marquee>
         </div>
       </section>
-      <section className='OurProject'>
+      <section id='Project' className='OurProject'>
         <div className="container mx-auto">
           <div className="pdBox">
             <div className="contentHeader">
@@ -332,24 +333,24 @@ export default function Home() {
           <Carousel infiniteLoop showIndicators={false} showThumbs={false} emulateTouch={false} swipeable={false}>
             <div className="IMGBOX">
               <img src={TestimonialFrame} alt="" className='Frame' />
-              <img src="https://via.placeholder.com/600x400" alt="Image 1" className='Imgs' />
+              <img src={TestimonialIMG} alt="Image 1" className='Imgs' />
             </div>
             <div className="IMGBOX">
               <img src={TestimonialFrame} alt="" className='Frame' />
-              <img src="https://via.placeholder.com/600x400" alt="Image 1" className='Imgs' />
+              <img src={TestimonialIMG} alt="Image 1" className='Imgs' />
             </div>
             <div className="IMGBOX">
               <img src={TestimonialFrame} alt="" className='Frame' />
-              <img src="https://via.placeholder.com/600x400" alt="Image 2" className='Imgs' />
+              <img src={TestimonialIMG} alt="Image 2" className='Imgs' />
             </div>
             <div className="IMGBOX">
               <img src={TestimonialFrame} alt="" className='Frame' />
-              <img src="https://via.placeholder.com/600x400" alt="Image 3" className='Imgs' />
+              <img src={TestimonialIMG} alt="Image 3" className='Imgs' />
             </div>
           </Carousel>
         </div>
       </section>
-      <section className="contact-us container mx-auto">
+      <section id='Contact' className="contact-us container mx-auto">
         <div className="contentHeader">
           <span className="tag">CONTACT US</span>
           <h2>Get Your <span>Free Quote Today!</span></h2>
@@ -377,26 +378,29 @@ export default function Home() {
             </form>
           </div>
           <div className="w-1/2 padding">
-            <div className="address-container" style={{ backgroundImage: `url(${ContactFrame}) ` }}>
-              <div>
-                <h3>Address</h3>
-                <p>4517 Washington Ave. <br /> Manchester, Kentucky 39495</p>
-              </div>
-              <div className='py-4'>
-                <h3>Contact</h3>
-                <p>Phone: +91 00000000<br /> Email: support@gmail.com</p>
-              </div>
-              <div className='py-4'>
-                <h3>Open Time</h3>
-                <p>Monday - Friday: 10:00-20:00<br /> Saturday Sunday: 11:00-18:00</p>
-              </div>
-              <div className='py-4'>
-                <h3>Stay Connected</h3>
-                <div className="flex icons">
-                  <i className="bi-facebook"></i>
-                  <i className="bi-twitter"></i>
-                  <i className="bi-instagram"></i>
-                  <i className="bi-youtube"></i>
+            <div className="imgBox w-full">
+              <img src={ContactFrame} alt="" className='projectIMG' />
+              <div className="address-container">
+                <div>
+                  <h3>Address</h3>
+                  <p>4517 Washington Ave. <br /> Manchester, Kentucky 39495</p>
+                </div>
+                <div className='py-2'>
+                  <h3>Contact</h3>
+                  <p>Phone: +91 00000000<br /> Email: support@gmail.com</p>
+                </div>
+                <div className='py-2'>
+                  <h3>Open Time</h3>
+                  <p>Monday - Friday: 10:00-20:00<br /> Saturday Sunday: 11:00-18:00</p>
+                </div>
+                <div className='py-2'>
+                  <h3>Stay Connected</h3>
+                  <div className="flex icons">
+                    <i className="bi-facebook"></i>
+                    <i className="bi-twitter"></i>
+                    <i className="bi-instagram"></i>
+                    <i className="bi-youtube"></i>
+                  </div>
                 </div>
               </div>
             </div>

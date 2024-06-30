@@ -1,12 +1,39 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import './Header.css';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleScroll = () => {
+    if (window.scrollY > 250) { // Adjust this value as per your requirement
+      setIsHeaderFixed(true);
+    } else {
+      setIsHeaderFixed(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleProjectClick = (sectionId) => {
+    navigate('/');
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
   };
 
   return (
@@ -32,7 +59,7 @@ export default function Header() {
         </div>
         <div className="yellowPanel"></div>
       </div>
-      <nav className="border-gray-200 px-4 lg:px-6 py-5">
+      <nav className={`border-gray-200 px-4 lg:px-6 py-1 ${isHeaderFixed ? 'fixed' : ''}`}>
         <div className="flex flex-wrap justify-between items-center container mx-auto">
           <a href="https://flowbite.com" className="flex items-center">
             <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
@@ -49,16 +76,13 @@ export default function Header() {
               <NavLink to="/Services" className="block py-2 pr-4 pl-3 rounded lg:p-0">Services</NavLink>
             </li>
             <li>
-              <NavLink to="/Projects" className="block py-2 pr-4 pl-3 rounded lg:p-0">Projects</NavLink>
+              <a onClick={() => handleProjectClick('Project')} className="block py-2 pr-4 pl-3 rounded lg:p-0">Projects</a>
             </li>
             <li>
-              <NavLink to="/Blog" className="block py-2 pr-4 pl-3 rounded lg:p-0">Blog</NavLink>
+              <a onClick={() => handleProjectClick('About')} className="block py-2 pr-4 pl-3 rounded lg:p-0">About Us</a>
             </li>
             <li>
-              <NavLink to="/About" className="block py-2 pr-4 pl-3 rounded lg:p-0">About Us</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact" className="block py-2 pr-4 pl-3 rounded lg:p-0">Contact Us</NavLink>
+              <a onClick={() => handleProjectClick('Contact')} className="block py-2 pr-4 pl-3 rounded lg:p-0">Contact Us</a>
             </li>
           </ul>
           <NavLink to="/get-started" className="navBtn hidden lg:block">Get A Quote</NavLink>
@@ -76,10 +100,7 @@ export default function Header() {
             <NavLink to="/Services" className="block py-2 pr-4 pl-3 rounded" onClick={toggleMenu}>Services</NavLink>
           </li>
           <li>
-            <NavLink to="/Projects" className="block py-2 pr-4 pl-3 rounded" onClick={toggleMenu}>Projects</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Blog" className="block py-2 pr-4 pl-3 rounded" onClick={toggleMenu}>Blog</NavLink>
+            <a onClick={handleProjectClick} className="block py-2 pr-4 pl-3 rounded">Projects</a>
           </li>
           <li>
             <NavLink to="/About" className="block py-2 pr-4 pl-3 rounded" onClick={toggleMenu}>About Us</NavLink>
