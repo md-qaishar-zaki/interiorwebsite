@@ -29,9 +29,8 @@ export default function Home() {
       <main className='main-Banner'>
         <div className="content container mx-auto flex">
           <div className="w-1/2 contentBox">
-            <span className='tag'>Since 2005</span>
-            <h2>Experience <span><b>Modern Luxury</b></span> in Architecture</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ullam hic blanditiis molestias rerum deleniti quidem non laudantium tempora a?</p>
+            <span className='tag'>Since 2021</span>
+            <h2>Your Home <span><b>Our</b></span> creations</h2>
             <button><i className="bi-arrow-right-circle-fill"></i><span>Get Started</span></button>
           </div>
           <div className="w-1/2 relative">
@@ -110,7 +109,7 @@ export default function Home() {
           </div>
           <div className="flex content AllBoxes">
             <div className="boxs">
-              <h6>Architectural Design</h6>
+              <h6>Educational Commercial</h6>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <img src={Art_IMG} alt="" />
               <i className="bi-arrow-up-right-circle-fill"></i>
@@ -156,7 +155,7 @@ export default function Home() {
                 <i className="bi-clipboard"></i>
                 <div className="no">01</div>
               </div>
-              <h6>Survey</h6>
+              <h6>Discussion Meeting</h6>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
             <div className="boxs">
@@ -164,7 +163,7 @@ export default function Home() {
                 <i className="bi-clipboard"></i>
                 <div className="no">01</div>
               </div>
-              <h6>Survey</h6>
+              <h6>2D+3D Design</h6>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
             <div className="boxs">
@@ -291,7 +290,7 @@ export default function Home() {
             <h2>See Our <span>Design</span></h2>
             <div className="flex justify-between">
               <h2><span>Transformations</span></h2>
-              <button className='viewBTN'><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button>
+              {/* <button className='viewBTN'><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button> */}
             </div>
           </div>
           <div className="IMGBOX">
