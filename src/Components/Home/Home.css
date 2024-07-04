@@ -730,7 +730,6 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0 0 0 / 80%));
 }
 
 .OutTeam .imgBox img {
@@ -739,16 +738,26 @@
 
 .OutTeam .socialMedia {
     position: absolute;
-    bottom: -55px;
+    bottom: -110px;
     transition: 0.3s;
     width: 100%;
+    margin: auto;
+    height: 180px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0 0 0 / 80%));
+    padding-bottom: 20px;
+}
+
+.TeamFrame {
+    position: absolute;
+    z-index: 5;
+    top: 0;
 }
 
 .imgBox:hover .socialMedia {
-    bottom: 50px;
+    bottom: 18px;
 }
 
 .OutTeam .socialMedia i {

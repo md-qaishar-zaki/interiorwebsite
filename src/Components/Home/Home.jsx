@@ -16,6 +16,9 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import AboutIMG from '../../Assets/aboutIMG.png';
+import OneTeam from '../../Assets/1team.png';
+import TwoTeam from '../../Assets/2team.png';
+import ThreeTeam from '../../Assets/3team.png'; 
 
 
 export default function Home() {
@@ -414,7 +417,8 @@ export default function Home() {
         <div className="flex TeamBoxs">
           <div className="w-4/12 text-center px-2">
             <div className="imgBox">
-              <img src={TeamFrame} alt="" />
+              <img src={OneTeam} alt="" />
+              <img src={TeamFrame} alt="" className='TeamFrame'/>
               <div className="socialMedia">
                 <i className="bi-facebook"></i>
                 <i className="bi-twitter"></i>
@@ -427,7 +431,8 @@ export default function Home() {
           </div>
           <div className="w-4/12 text-center px-2">
             <div className="imgBox">
-              <img src={TeamFrame} alt="" />
+              <img src={TwoTeam} alt="" />
+              <img src={TeamFrame} alt="" className='TeamFrame'/>
               <div className="socialMedia">
                 <i className="bi-facebook"></i>
                 <i className="bi-twitter"></i>
@@ -440,7 +445,8 @@ export default function Home() {
           </div>
           <div className="w-4/12 text-center px-2">
             <div className="imgBox">
-              <img src={TeamFrame} alt="" />
+              <img src={ThreeTeam} alt="" />
+              <img src={TeamFrame} alt="" className='TeamFrame'/>
               <div className="socialMedia">
                 <i className="bi-facebook"></i>
                 <i className="bi-twitter"></i>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './Header.css';
+import Popup from '../GetApopup/Popup.jsx'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -126,13 +127,12 @@ export default function Header() {
 
       {isPopupOpen && (
         <div className="popup-overlay">
-          <div className="popup">
+          <div className="popup"> 
+            <div className="popup-content">
             <button className="close-popup" onClick={closePopup}>
               <i className="bi-x-lg"></i>
             </button>
-            <div className="popup-content">
-              <h2>Welcome to my Service</h2>
-              <button className="popup-btn" onClick={closePopup}>Close</button>
+              <Popup />
             </div>
           </div>
         </div>

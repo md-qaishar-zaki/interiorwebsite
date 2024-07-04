@@ -236,33 +236,20 @@ main {
     z-index: 1000;
 }
 
-.popup {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    position: relative;
-}
-
-.popup-content {
-    text-align: center;
-}
-
 .close-popup {
     position: absolute;
-    top: 10px;
+    top: 71px;
     right: 10px;
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+    z-index: 1;
+    color: #fff;
+    text-shadow: 1px 3px 3px #000;
 }
 
-.popup-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.popup {
+    position: relative;
+    width: 50%;
 }
