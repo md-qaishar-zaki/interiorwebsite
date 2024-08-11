@@ -55,18 +55,23 @@ export default function Header() {
             <div className="flex flex-row justify-between w-100 contact items-center">
               <div className="flex px-2">
                 <i className="bi-telephone-fill px-2"></i>
-                <p>+91 7633953812</p>
+                <p><a href="tel:+917977523087">+91 79775 23087</a></p>
               </div>
               <div className="flex px-2">
                 <i className="bi-envelope-fill px-2"></i>
-                <p>abc@gmail.com</p>
+                <p><a href="pragatisinterio@gmail.com" target="_blank">pragatisinterio@gmail.com</a></p>
               </div>
             </div>
             <div className="social-media flex flex-row justify-between">
-              <i className="bi-facebook"></i>
-              <i className="bi-twitter"></i>
-              <i className="bi-instagram"></i>
-              <i className="bi-youtube"></i>
+              <a href="https://www.facebook.com/people/pragatisinterio/100093655032640/?mibextid=ZbWKwL" target="_blank">
+                <i className="bi-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/invites/contact/?igsh=f3579klalwec&utm_content=n52g21f" target="_blank">
+                <i className="bi-instagram"></i>
+              </a>
+              <a href="https://www.google.com/maps/search/PRAGATI'S+INTERIO,+Shop+No.+8,+Laxmi+Narayan+Apt+Opp.+Fish+Market,+Vangaon+Tal-Dahanu,+Mumbai,+Maharashtra+401103/@19.932577,72.6686244,12z/data=!3m1!4b1?entry=ttu" target="_blank">
+                <i className="bi-geo-alt"></i>
+              </a>
             </div>
           </div>
           <div className="yellowPanel"></div>
@@ -127,11 +132,11 @@ export default function Header() {
 
       {isPopupOpen && (
         <div className="popup-overlay">
-          <div className="popup"> 
+          <div className="popup">
             <div className="popup-content">
-            <button className="close-popup" onClick={closePopup}>
-              <i className="bi-x-lg"></i>
-            </button>
+              <button className="close-popup" onClick={closePopup}>
+                <i className="bi-x-lg"></i>
+              </button>
               <Popup />
             </div>
           </div>
