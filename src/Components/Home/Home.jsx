@@ -18,15 +18,19 @@ import { Carousel } from 'react-responsive-carousel';
 import AboutIMG from '../../Assets/aboutIMG.png';
 import OneTeam from '../../Assets/1team.png';
 import TwoTeam from '../../Assets/2team.png';
-import ThreeTeam from '../../Assets/3team.png'; 
+import ThreeTeam from '../../Assets/3team.png';
+import ww from '../../Assets/After_&_Before/After_1.jpg'
 
 
 export default function Home() {
-  const before =
-    "https://upload.wikimedia.org/wikipedia/commons/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg";
-  const after =
-    "https://hindalkindi1992.files.wordpress.com/2013/11/portrait_eyes_23.jpg";
-
+  const images = [
+    { before: require('../../Assets/After_&_Before/Before_1.jpg'), after: require('../../Assets/After_&_Before/After_1.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_2.jpg'), after: require('../../Assets/After_&_Before/After_2.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_3.jpg'), after: require('../../Assets/After_&_Before/After_3.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_4.jpg'), after: require('../../Assets/After_&_Before/After_4.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_5.jpg'), after: require('../../Assets/After_&_Before/After_5.jpg') },
+    // Add more images as needed
+  ];
   return (
     <>
       <main className='main-Banner'>
@@ -49,22 +53,22 @@ export default function Home() {
           <div className="box">
             <i className="bi-box-seam"></i>
             <div className="flex flex-col">
-              <h6>Reasonable Prices</h6>
-              <p>Quality desing at affordable rates.</p>
+              <h6>Affordable price</h6>
+              <p>Bringing Harmony Home with Vastu Expertise at Affordable Prices</p>
             </div>
           </div>
           <div className="box">
             <i className="bi-wallet2"></i>
             <div className="flex flex-col">
-              <h6>Reasonable Prices</h6>
-              <p>Quality desing at affordable rates.</p>
+              <h6>Innovative design</h6>
+              <p>Innovative Designs Crafted to Elevate Your Space with Timeless Harmony.</p>
             </div>
           </div>
           <div className="box">
             <i className="bi-headphones"></i>
             <div className="flex flex-col">
-              <h6>Reasonable Prices</h6>
-              <p>Quality desing at affordable rates.</p>
+              <h6>Vastu Expertise</h6>
+              <p>Vastu Expertise aligns your space with Vastu principles for harmony and balance.</p>
             </div>
           </div>
         </div>
@@ -79,7 +83,6 @@ export default function Home() {
               <span className='tag'>ABOUT US</span>
               <h2>Turning <span>Your Dream Home</span> into Reality </h2>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, porro facilis harum praesentium in illum.</p>
 
             <div className="flex">
               <div className="box flex-col">
@@ -110,7 +113,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex content AllBoxes">
+          <div className="flex content AllBoxes pt-2">
             <div className="boxs">
               <h6>Educational Commercial</h6>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -290,66 +293,21 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="contentHeader">
             <span className="tag">Before & After</span>
-            <h2>See Our <span>Design</span></h2>
-            <div className="flex justify-between">
-              <h2><span>Transformations</span></h2>
-              {/* <button className='viewBTN'><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button> */}
-            </div>
+            <h2>See Our <span>Design Transformations</span></h2> 
           </div>
           <div className="IMGBOX">
             <img src={TransformationsFrame} alt="" className='Frame' />
             <Carousel infiniteLoop showIndicators={false} showThumbs={false} emulateTouch={false} swipeable={false}>
-              <div className="IMGBOX">
-                <img src={TransformationsFrame} alt="" className='Frame' />
-                <div className="compare-container">
-                  <ReactCompareImage leftImage={before} rightImage={after} />
+              {images.map((imagePair, index) => (
+                <div className="IMGBOX" key={index}>
+                  <img src={TransformationsFrame} alt="" className='Frame' />
+                  <div className="compare-container">
+                    <ReactCompareImage leftImage={imagePair.before} rightImage={imagePair.after} />
+                  </div>
                 </div>
-              </div>
-              <div className="IMGBOX">
-                <img src={TransformationsFrame} alt="" className='Frame' />
-                <div className="compare-container">
-                  <ReactCompareImage leftImage={before} rightImage={after} />
-                </div>
-              </div>
-              <div className="IMGBOX">
-                <img src={TransformationsFrame} alt="" className='Frame' />
-                <div className="compare-container">
-                  <ReactCompareImage leftImage={before} rightImage={after} />
-                </div>
-              </div>
+              ))}
             </Carousel>
           </div>
-        </div>
-      </section>
-      <section className='Testimonial'>
-        <div className="contentHeader">
-          <span className="tag">Testimonial</span>
-          <h2>What <span>Our Client</span></h2>
-          <div className="flex justify-between">
-            <h2><span>Say About Us</span></h2>
-            <button className='viewBTN'><i className="bi-arrow-right-circle-fill"></i><span>View All Testimonial</span></button>
-          </div>
-        </div>
-        <div className="IMGBOX">
-          <img src={TestimonialFrame} alt="" className='Frame' />
-          <Carousel infiniteLoop showIndicators={false} showThumbs={false} emulateTouch={false} swipeable={false}>
-            <div className="IMGBOX">
-              <img src={TestimonialFrame} alt="" className='Frame' />
-              <img src={TestimonialIMG} alt="Image 1" className='Imgs' />
-            </div>
-            <div className="IMGBOX">
-              <img src={TestimonialFrame} alt="" className='Frame' />
-              <img src={TestimonialIMG} alt="Image 1" className='Imgs' />
-            </div>
-            <div className="IMGBOX">
-              <img src={TestimonialFrame} alt="" className='Frame' />
-              <img src={TestimonialIMG} alt="Image 2" className='Imgs' />
-            </div>
-            <div className="IMGBOX">
-              <img src={TestimonialFrame} alt="" className='Frame' />
-              <img src={TestimonialIMG} alt="Image 3" className='Imgs' />
-            </div>
-          </Carousel>
         </div>
       </section>
       <section id='Contact' className="contact-us container mx-auto">
@@ -418,7 +376,7 @@ export default function Home() {
           <div className="w-4/12 text-center px-2">
             <div className="imgBox">
               <img src={OneTeam} alt="" />
-              <img src={TeamFrame} alt="" className='TeamFrame'/>
+              <img src={TeamFrame} alt="" className='TeamFrame' />
               <div className="socialMedia">
                 <i className="bi-facebook"></i>
                 <i className="bi-twitter"></i>
@@ -432,7 +390,7 @@ export default function Home() {
           <div className="w-4/12 text-center px-2">
             <div className="imgBox">
               <img src={TwoTeam} alt="" />
-              <img src={TeamFrame} alt="" className='TeamFrame'/>
+              <img src={TeamFrame} alt="" className='TeamFrame' />
               <div className="socialMedia">
                 <i className="bi-facebook"></i>
                 <i className="bi-twitter"></i>
@@ -446,7 +404,7 @@ export default function Home() {
           <div className="w-4/12 text-center px-2">
             <div className="imgBox">
               <img src={ThreeTeam} alt="" />
-              <img src={TeamFrame} alt="" className='TeamFrame'/>
+              <img src={TeamFrame} alt="" className='TeamFrame' />
               <div className="socialMedia">
                 <i className="bi-facebook"></i>
                 <i className="bi-twitter"></i>
