@@ -48,32 +48,32 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className="container mx-auto threeBoxs">
-        <div className="flex boxes">
-          <div className="box">
-            <i className="bi-box-seam"></i>
-            <div className="flex flex-col">
-              <h6>Affordable price</h6>
-              <p>Bringing Harmony Home with Vastu Expertise at Affordable Prices</p>
+      <section id='About' className='AboutUS'>
+        <div className="container mx-auto threeBoxs">
+          <div className="flex boxes">
+            <div className="box">
+              <i className="bi-box-seam"></i>
+              <div className="flex flex-col">
+                <h6>Affordable price</h6>
+                <p>Bringing Harmony Home with Vastu Expertise at Affordable Prices</p>
+              </div>
             </div>
-          </div>
-          <div className="box">
-            <i className="bi-wallet2"></i>
-            <div className="flex flex-col">
-              <h6>Innovative design</h6>
-              <p>Innovative Designs Crafted to Elevate Your Space with Timeless Harmony.</p>
+            <div className="box">
+              <i className="bi-wallet2"></i>
+              <div className="flex flex-col">
+                <h6>Innovative design</h6>
+                <p>Innovative Designs Crafted to Elevate Your Space with Timeless Harmony.</p>
+              </div>
             </div>
-          </div>
-          <div className="box">
-            <i className="bi-headphones"></i>
-            <div className="flex flex-col">
-              <h6>Vastu Expertise</h6>
-              <p>Vastu Expertise aligns your space with Vastu principles for harmony and balance.</p>
+            <div className="box">
+              <i className="bi-headphones"></i>
+              <div className="flex flex-col">
+                <h6>Vastu Expertise</h6>
+                <p>Vastu Expertise aligns your space with Vastu principles for harmony and balance.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <section id='About' className='AboutUS'>
         <div className="container mx-auto flex AbousResposive">
           <div className="w-1/2 flex items-center	justify-center">
             <img src={AboutIMG} alt="" />
@@ -293,7 +293,7 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="contentHeader">
             <span className="tag">Before & After</span>
-            <h2>See Our <span>Design Transformations</span></h2> 
+            <h2>See Our <span>Design Transformations</span></h2>
           </div>
           <div className="IMGBOX">
             <img src={TransformationsFrame} alt="" className='Frame' />

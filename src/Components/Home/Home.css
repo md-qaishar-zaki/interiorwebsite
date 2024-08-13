@@ -11,18 +11,20 @@
 }
 
 .main-Banner h2 {
-    font-size: 55px;
+    font-size: 97px;
     color: var(--white-color);
     font-weight: 600;
     letter-spacing: 2px;
-    line-height: 68px;
+    line-height: 1;
+    margin-bottom: 21px;
+    text-transform: capitalize;
 }
 
 .main-Banner h2 span {
-    font-family: "Tangerine", cursive;
-    font-size: 32px;
+    font-family: "Dancing Script", cursive;
+    font-size: 78px;
     color: var(--secondary-color);
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .main-Banner p {
@@ -42,6 +44,13 @@
     position: relative;
     margin-bottom: 10px;
     overflow: hidden;
+}
+
+.main-Banner .contentBox {
+    padding: 43px 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main-Banner button span {
@@ -92,10 +101,10 @@
 }
 
 .contentHeader h2 span {
-    font-family: "Tangerine", cursive;
-    font-size: 32px;
+    font-family: "Dancing Script", cursive;
+    font-size: 22px;
     color: var(--secondary-color);
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .contentHeader .tag {
