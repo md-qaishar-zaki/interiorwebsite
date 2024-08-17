@@ -24,3 +24,7 @@ html {
 #root {
     padding-top: 111px;
 }
+
+a {
+    cursor: pointer !important;
+}

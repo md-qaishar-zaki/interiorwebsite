@@ -65,18 +65,21 @@ h3 {
     margin-right: 5px;
 }
 
-// Forms
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="password"],
-textarea,
-select {
-    width: 100%;
-    display: block;
-    padding: 12px 15px;
-    border: 1px solid #ccc;
-    background: #f9f9f9;
+.form-wizard {
+
+    // Forms
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    textarea,
+    select {
+        width: 100%;
+        display: block;
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        background: #f9f9f9;
+    }
 }
 
 // Global

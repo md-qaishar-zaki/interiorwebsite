@@ -3,7 +3,7 @@ import './Popup.scss';
 
 function Popup() {
   const [currentStep, setCurrentStep] = useState(1);
-  const totalSteps = 4;
+  const totalSteps = 3;
 
   const nextStep = () => {
     setCurrentStep((prevStep) => (prevStep < totalSteps ? prevStep + 1 : prevStep));
@@ -36,26 +36,6 @@ function Popup() {
 
       <div className="myContainer">
         <div className={`form-container ${currentStep === 1 ? 'active' : ''}`}>
-          <h2 className="text-center form-title">Create Account</h2>
-          <form>
-            <div className="form-group">
-              <input type="text" placeholder="Username" />
-            </div>
-            <div className="form-group">
-              <input type="text" placeholder="Email Address" />
-            </div>
-            <div className="form-group">
-              <input type="password" placeholder="Password" />
-            </div>
-            <div className="form-group text-center mar-b-0">
-              <button type="button" className="btn btn-primary next" onClick={nextStep}>
-                NEXT
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div className={`form-container ${currentStep === 2 ? 'active' : ''}`}>
           <h2 className="text-center form-title">Personal Info</h2>
           <form>
             <div className="form-group">
@@ -64,6 +44,19 @@ function Popup() {
             <div className="form-group">
               <input type="text" placeholder="Last Name" />
             </div>
+            <div className="form-group text-center mar-b-0">
+              <button type="button" className="btn btn-default back" onClick={prevStep}>
+                BACK
+              </button>
+              <button type="button" className="btn btn-primary next" onClick={nextStep}>
+                NEXT
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div className={`form-container ${currentStep === 2 ? 'active' : ''}`}>
+          <form>
             <div className="form-group">
               <input type="text" placeholder="Phone No." />
             </div>
@@ -82,30 +75,7 @@ function Popup() {
         </div>
 
         <div className={`form-container ${currentStep === 3 ? 'active' : ''}`}>
-          <h2 className="text-center form-title">Social Media Info</h2>
-          <form>
-            <div className="form-group">
-              <input type="text" placeholder="Facebook" />
-            </div>
-            <div className="form-group">
-              <input type="text" placeholder="Twitter" />
-            </div>
-            <div className="form-group">
-              <input type="text" placeholder="Instagram" />
-            </div>
-            <div className="form-group text-center mar-b-0">
-              <button type="button" className="btn btn-default back" onClick={prevStep}>
-                BACK
-              </button>
-              <button type="button" className="btn btn-primary next" onClick={nextStep}>
-                NEXT
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div className={`form-container ${currentStep === 4 ? 'active' : ''}`}>
-          <h2 className="text-center form-title">Finish</h2>
+        <h2 className="text-center form-title">Finish</h2>
           <form>
             <div className="form-group">
               <h3 className="text-center">Thanks for Staying Tuned!</h3>
@@ -123,6 +93,10 @@ function Popup() {
             </div>
           </form>
         </div>
+
+        {/* <div className={`form-container ${currentStep === 4 ? 'active' : ''}`}>
+         
+        </div> */}
       </div>
     </div>
   );
