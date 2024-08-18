@@ -70,9 +70,9 @@ function Popup() {
       </div>
 
       <div className="myContainer">
-        <div className={`form-container ${currentStep === 1 ? 'active' : ''}`}>
-          <h2 className="text-center form-title">Personal Info</h2>
-          <form>
+        <form onSubmit={handleSubmit}>
+          <div className={`form-container ${currentStep === 1 ? 'active' : ''}`}>
+            <h2 className="text-center form-title">Personal Info</h2>
             <div className="form-group">
               <input
                 type="text"
@@ -99,11 +99,9 @@ function Popup() {
                 NEXT
               </button>
             </div>
-          </form>
-        </div>
+          </div>
 
-        <div className={`form-container ${currentStep === 2 ? 'active' : ''}`}>
-          <form>
+          <div className={`form-container ${currentStep === 2 ? 'active' : ''}`}>
             <div className="form-group">
               <input
                 type="text"
@@ -129,12 +127,10 @@ function Popup() {
                 NEXT
               </button>
             </div>
-          </form>
-        </div>
+          </div>
 
-        <div className={`form-container ${currentStep === 3 ? 'active' : ''}`}>
-          <h2 className="text-center form-title">Finish</h2>
-          <form onSubmit={handleSubmit}>
+          <div className={`form-container ${currentStep === 3 ? 'active' : ''}`}>
+            <h2 className="text-center form-title">Finish</h2>
             <div className="form-group">
               <h3 className="text-center">Thanks for Staying Tuned!</h3>
               <p className="text-center">
@@ -149,8 +145,8 @@ function Popup() {
                 SUBMIT
               </button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   );
