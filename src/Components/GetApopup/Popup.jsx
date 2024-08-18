@@ -3,6 +3,13 @@ import './Popup.scss';
 
 function Popup() {
   const [currentStep, setCurrentStep] = useState(1);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    phoneNo: '',
+    address: '',
+  });
+
   const totalSteps = 3;
 
   const nextStep = () => {
@@ -15,6 +22,34 @@ function Popup() {
 
   const goToStep = (step) => {
     setCurrentStep(step);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:5000/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Form submitted successfully');
+      } else {
+        alert('Failed to submit the form');
+      }
+    } catch (error) {
+      console.error('Error submitting the form:', error);
+      alert('Error submitting the form');
+    }
   };
 
   return (
@@ -39,10 +74,22 @@ function Popup() {
           <h2 className="text-center form-title">Personal Info</h2>
           <form>
             <div className="form-group">
-              <input type="text" placeholder="First Name" />
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                value={formData.firstName}
+                onChange={handleInputChange}
+              />
             </div>
             <div className="form-group">
-              <input type="text" placeholder="Last Name" />
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                value={formData.lastName}
+                onChange={handleInputChange}
+              />
             </div>
             <div className="form-group text-center mar-b-0">
               <button type="button" className="btn btn-default back" onClick={prevStep}>
@@ -58,10 +105,21 @@ function Popup() {
         <div className={`form-container ${currentStep === 2 ? 'active' : ''}`}>
           <form>
             <div className="form-group">
-              <input type="text" placeholder="Phone No." />
+              <input
+                type="text"
+                name="phoneNo"
+                placeholder="Phone No."
+                value={formData.phoneNo}
+                onChange={handleInputChange}
+              />
             </div>
             <div className="form-group">
-              <textarea placeholder="Address"></textarea>
+              <textarea
+                name="address"
+                placeholder="Address"
+                value={formData.address}
+                onChange={handleInputChange}
+              ></textarea>
             </div>
             <div className="form-group text-center mar-b-0">
               <button type="button" className="btn btn-default back" onClick={prevStep}>
@@ -75,8 +133,8 @@ function Popup() {
         </div>
 
         <div className={`form-container ${currentStep === 3 ? 'active' : ''}`}>
-        <h2 className="text-center form-title">Finish</h2>
-          <form>
+          <h2 className="text-center form-title">Finish</h2>
+          <form onSubmit={handleSubmit}>
             <div className="form-group">
               <h3 className="text-center">Thanks for Staying Tuned!</h3>
               <p className="text-center">
@@ -93,10 +151,6 @@ function Popup() {
             </div>
           </form>
         </div>
-
-        {/* <div className={`form-container ${currentStep === 4 ? 'active' : ''}`}>
-         
-        </div> */}
       </div>
     </div>
   );
