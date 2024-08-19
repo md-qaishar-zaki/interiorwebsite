@@ -31,7 +31,7 @@ function Popup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
       const response = await fetch('http://localhost:5000/submit-form', {
         method: 'POST',
@@ -40,17 +40,20 @@ function Popup() {
         },
         body: JSON.stringify(formData),
       });
-
+  
       if (response.ok) {
         alert('Form submitted successfully');
       } else {
-        alert('Failed to submit the form');
+        const errorText = await response.text();
+        alert(`Failed to submit the form: ${errorText}`);
       }
     } catch (error) {
       console.error('Error submitting the form:', error);
       alert('Error submitting the form');
     }
   };
+  
+    
 
   return (
     <div className="form-wizard">
