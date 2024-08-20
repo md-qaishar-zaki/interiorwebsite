@@ -1,3 +1,4 @@
+// src/components/Popup.jsx
 import React, { useState } from 'react';
 import './Popup.scss';
 
@@ -20,10 +21,6 @@ function Popup() {
     setCurrentStep((prevStep) => (prevStep > 1 ? prevStep - 1 : prevStep));
   };
 
-  const goToStep = (step) => {
-    setCurrentStep(step);
-  };
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -31,7 +28,7 @@ function Popup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
       const response = await fetch('http://localhost:5000/submit-form', {
         method: 'POST',
@@ -40,7 +37,7 @@ function Popup() {
         },
         body: JSON.stringify(formData),
       });
-  
+
       if (response.ok) {
         alert('Form submitted successfully');
       } else {
@@ -52,8 +49,6 @@ function Popup() {
       alert('Error submitting the form');
     }
   };
-  
-    
 
   return (
     <div className="form-wizard">
@@ -63,10 +58,10 @@ function Popup() {
             <li
               key={index}
               className={currentStep >= index + 1 ? 'active' : ''}
-              onClick={() => goToStep(index + 1)}
+              onClick={() => setCurrentStep(index + 1)}
             >
               <span>{index + 1}</span>
-              {['Create Account', 'Personal Info', 'Social Info', 'Finish'][index]}
+              {['Personal Info', 'Contact Info', 'Finish'][index]}
             </li>
           ))}
         </ul>
@@ -105,6 +100,7 @@ function Popup() {
           </div>
 
           <div className={`form-container ${currentStep === 2 ? 'active' : ''}`}>
+            <h2 className="text-center form-title">Contact Info</h2>
             <div className="form-group">
               <input
                 type="text"
