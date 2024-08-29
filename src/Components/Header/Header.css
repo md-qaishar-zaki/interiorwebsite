@@ -208,6 +208,10 @@ main {
     }
 }
 
+.form-container{
+    box-shadow: unset !important;
+}
+
 /* Desktop styles */
 @media (min-width: 769px) {
     .mobile-menu {
@@ -238,18 +242,24 @@ main {
 
 .close-popup {
     position: absolute;
-    top: 44px;
-    right: 11%;
+    top: 5px;
+    right: 12px;
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
     z-index: 1;
-    color: #fff;
-    text-shadow: 1px 3px 3px #000;
+    color: #fb8200;
+    text-shadow: 1px 1px 3px #00000057;
 }
 
 .popup {
     position: relative;
-    width: 50%;
+    width: 40%;
+}
+
+.popup-content {
+    background: #fff;
+    border-radius: 5px;
+    min-height: 525px;
 }

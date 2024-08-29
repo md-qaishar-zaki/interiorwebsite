@@ -103,12 +103,14 @@ a {
     position: relative;
     display: table;
     margin: 0 auto;
-    max-width: 540px;
+    width: 85%;
 }
 
 .steps {
     margin: 40px 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 
     ul {
         margin: 0;
@@ -117,7 +119,7 @@ a {
 
         li {
             float: left;
-            color: #fff;
+            color: #222222;
             padding: 0 15px;
             position: relative;
             cursor: pointer;
@@ -183,6 +185,7 @@ a {
 }
 
 .steps ul li span {
+    border: 1px solid;
     display: block;
     margin: 0 auto 15px;
     width: 35px;

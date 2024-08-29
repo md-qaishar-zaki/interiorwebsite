@@ -1,4 +1,3 @@
-// src/components/Popup.jsx
 import React, { useState } from 'react';
 import './Popup.scss';
 
@@ -28,27 +27,28 @@ function Popup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
-      const response = await fetch('https://pragatisinterio.in/submit-form', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbwnYjpmizo_4MR2tGylWm7TR_2Pxq25u3PzYdGKcRpcMRthr-9VtGPHgBwSS64qh8zD/exec', {
         method: 'POST',
+        mode: 'no-cors',  // Add this line to handle CORS issues
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formData), 
       });
-
+  
       if (response.ok) {
         alert('Form submitted successfully');
       } else {
-        const errorText = await response.text();
-        alert(`Failed to submit the form: ${errorText}`);
+        alert('Form submission may have encountered an issue');
       }
     } catch (error) {
       console.error('Error submitting the form:', error);
       alert('Error submitting the form');
     }
   };
+  
 
   return (
     <div className="form-wizard">
@@ -133,7 +133,7 @@ function Popup() {
             <div className="form-group">
               <h3 className="text-center">Thanks for Staying Tuned!</h3>
               <p className="text-center">
-                Made by <a href="https://codepen.io/HanumanSahay/" target="_blank" rel="noopener noreferrer">@Hanuman Sahay</a>
+                Made by 
               </p>
             </div>
             <div className="form-group text-center mar-b-0">
