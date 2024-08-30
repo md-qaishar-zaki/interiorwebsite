@@ -29,7 +29,7 @@ function Popup() {
     e.preventDefault();
   
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbwnYjpmizo_4MR2tGylWm7TR_2Pxq25u3PzYdGKcRpcMRthr-9VtGPHgBwSS64qh8zD/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxm6Jp3Qu5SakwoCErjpUnelZVKxzNHLj3LXCaPSM4r9QCjbqyhkKP8mUTLtII8kBy_/exec', {
         method: 'POST',
         mode: 'no-cors',  // Add this line to handle CORS issues
         headers: {
