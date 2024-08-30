@@ -5,7 +5,7 @@ import './Popup.scss';
 function Popup() {
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
-    name: '', 
+    name: '',
   });
   const totalSteps = 10;
 
@@ -69,22 +69,21 @@ function Popup() {
           <div className={`form-container ${currentStep === 1 ? 'active' : ''}`}>
             <h2 className="text-center form-title">What type of interior service do you need?</h2>
             <div className="form-group">
-              <input name="project-type" type="radio" id="complete-project" value="complete-project" />
+              <input name="project-type" type="radio" id="complete-project" value="complete-project" onChange={handleInputChange} />
               <label htmlFor="complete-project">Complete project - designing and installation</label>
             </div>
             <div className="form-group">
-              <input name="project-type" type="radio" id="design-only" value="design-only" />
+              <input name="project-type" type="radio" id="design-only" value="design-only" onChange={handleInputChange} />
               <label htmlFor="design-only">Design only</label>
             </div>
             <div className="form-group">
-              <input name="project-type" type="radio" id="installation-only" value="installation-only" />
+              <input name="project-type" type="radio" id="installation-only" value="installation-only" onChange={handleInputChange} />
               <label htmlFor="installation-only">Installation only</label>
             </div>
             <div className="form-group d-flex">
-              <input name="project-type" type="radio" id="other" value="other" />
+              <input name="project-type" type="radio" id="other" value="other" onChange={handleInputChange} />
               <input type="text" placeholder="Other" aria-label="other" />
             </div>
-
 
             <div className="form-group text-center mar-b-0">
               <button type="button" className="btn btn-default back" onClick={prevStep}>
@@ -99,17 +98,16 @@ function Popup() {
           <div className={`form-container ${currentStep === 2 ? 'active' : ''}`}>
             <h2 className="text-center form-title">What type of project is it?</h2>
             <div className="form-group">
-              <input name="property-type" type="radio" id="new-property" value="new-property" />
+              <input name="property-type" type="radio" id="new-property" value="new-property" onChange={handleInputChange} />
               <label htmlFor="new-property">New property</label>
             </div>
             <div className="form-group">
-              <input name="property-type" type="radio" id="existing-property" value="existing-property" />
+              <input name="property-type" type="radio" id="existing-property" value="existing-property" onChange={handleInputChange} />
               <label htmlFor="existing-property">Existing property</label>
             </div>
             <div className="form-group">
-              <input name="property-type" type="radio" id="other" value="other" />
-              <label htmlFor="other">Other</label>
-              <input type="text" placeholder="Other" aria-label="other" />
+              <input name="property-type" type="radio" id="other" value="other" onChange={handleInputChange} />
+              <input type="text" placeholder="Other" aria-label="other" onChange={handleInputChange} />
             </div>
             <div className="form-group text-center mar-b-0">
               <button type="button" className="btn btn-default back" onClick={prevStep}>
@@ -124,35 +122,35 @@ function Popup() {
           <div className={`form-container ${currentStep === 3 ? 'active' : ''}`}>
             <h2 className="text-center form-title">What kind of property is this for?</h2>
             <div className="form-group">
-              <input name="property-type" type="radio" id="house" value="house" />
+              <input name="property-type" type="radio" id="house" value="house" onChange={handleInputChange} />
               <label htmlFor="house">House</label>
             </div>
             <div className="form-group">
-              <input name="property-type" type="radio" id="flat" value="flat" />
+              <input name="property-type" type="radio" id="flat" value="flat" onChange={handleInputChange} />
               <label htmlFor="flat">Flat</label>
             </div>
             <div className="form-group">
-              <input name="property-type" type="radio" id="commercial-premises" value="commercial-premises" />
+              <input name="property-type" type="radio" id="commercial-premises" value="commercial-premises" onChange={handleInputChange} />
               <label htmlFor="commercial-premises">Holiday home</label>
             </div>
             <div className="form-group">
-              <input name="property-type" type="radio" id="shop" value="shop" />
+              <input name="property-type" type="radio" id="shop" value="shop" onChange={handleInputChange} />
               <label htmlFor="shop">Shop</label>
             </div>
             <div className="form-group">
-              <input name="property-type" type="radio" id="office" value="office" />
+              <input name="property-type" type="radio" id="office" value="office" onChange={handleInputChange} />
               <label htmlFor="office">Office</label>
             </div>
             <div className="form-group">
-              <input name="property-type" type="radio" id="clinic" value="clinic" />
+              <input name="property-type" type="radio" id="clinic" value="clinic" onChange={handleInputChange} />
               <label htmlFor="clinic">Clinic</label>
             </div>
             <div className="form-group">
-              <input name="property-type" type="radio" id="restaurant-hotel" value="restaurant-hotel" />
+              <input name="property-type" type="radio" id="restaurant-hotel" value="restaurant-hotel" onChange={handleInputChange} />
               <label htmlFor="restaurant-hotel">Restaurant / hotel</label>
             </div>
             <div className="form-group">
-              <input name="property-type" type="radio" id="other" value="other" />
+              <input name="property-type" type="radio" id="other" value="other" onChange={handleInputChange} />
               <label htmlFor="other">Other</label>
               <input type="text" placeholder="Other" aria-label="other" />
             </div>
@@ -169,34 +167,34 @@ function Popup() {
           <div className={`form-container ${currentStep === 4 ? 'active' : ''}`}>
             <h2 className="text-center form-title">How large is your property?</h2>
             <div className="form-group">
-              <input name="room-type" type="radio" id="1-room-kitchen" value="1-room-kitchen" />
+              <input name="room-type" type="radio" id="1-room-kitchen" value="1-room-kitchen" onChange={handleInputChange} />
               <label htmlFor="1-room-kitchen">1 Room kitchen</label>
             </div>
             <div className="form-group">
-              <input name="room-type" type="radio" id="1-bhk" value="1-bhk" />
+              <input name="room-type" type="radio" id="1-bhk" value="1-bhk" onChange={handleInputChange} />
               <label htmlFor="1-bhk">1 BHK</label>
             </div>
             <div className="form-group">
-              <input name="room-type" type="radio" id="2-bhk" value="2-bhk" />
+              <input name="room-type" type="radio" id="2-bhk" value="2-bhk" onChange={handleInputChange} />
               <label htmlFor="2-bhk">2 BHK</label>
             </div>
             <div className="form-group">
-              <input name="room-type" type="radio" id="3-bhk" value="3-bhk" />
+              <input name="room-type" type="radio" id="3-bhk" value="3-bhk" onChange={handleInputChange} />
               <label htmlFor="3-bhk">3 BHK</label>
             </div>
             <div className="form-group">
-              <input name="room-type" type="radio" id="4-bhk" value="4-bhk" />
+              <input name="room-type" type="radio" id="4-bhk" value="4-bhk" onChange={handleInputChange} />
               <label htmlFor="4-bhk">4 BHK</label>
             </div>
             <div className="form-group">
-              <input name="room-type" type="radio" id="more-than-4-rooms" value="more-than-4-rooms" />
+              <input name="room-type" type="radio" id="more-than-4-rooms" value="more-than-4-rooms" onChange={handleInputChange} />
               <label htmlFor="more-than-4-rooms">More than 4 rooms</label>
             </div>
             <div className="form-group">
-              <input name="room-type" type="radio" id="other" value="other" />
+              <input name="room-type" type="radio" id="other" value="other" onChange={handleInputChange} />
               <label htmlFor="other">
                 Other
-                <input className="" type="text" placeholder="Other"/>
+                <input className="" type="text" placeholder="Other" onChange={handleInputChange} />
               </label>
             </div>
             <div className="form-group text-center mar-b-0">
@@ -213,49 +211,49 @@ function Popup() {
             <h2 className="text-center form-title">Which room(s) need improving?</h2>
             <div className="form-group">
               <label>
-                <input type="checkbox" value="" />
+                <input type="checkbox" value="Home-Desing" onChange={handleInputChange} />
                 <span>This is a whole home design</span>
               </label>
             </div>
             <div className="form-group">
               <label>
-                <input type="checkbox" value="" />
+                <input type="checkbox" value="Bathroom" onChange={handleInputChange} />
                 <span>Bathroom</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="bedroom-master" />
-                <span>Bedroom</span>
+                <input type="checkbox" value="bedroom-master" onChange={handleInputChange} />
+                <span>Bedroom-master</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="dining-room" />
+                <input type="checkbox" value="dining-room" onChange={handleInputChange} />
                 <span>Dining room</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="hallway" />
+                <input type="checkbox" value="hallway" onChange={handleInputChange} />
                 <span>Hallway</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="home-office-study" />
+                <input type="checkbox" value="home-office-study" onChange={handleInputChange} />
                 <span>Home office/Study</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="kitchen" />
+                <input type="checkbox" value="kitchen" onChange={handleInputChange} />
                 <span>Kitchen</span>
               </label>
             </div>
             <div className="form-group">
               <label>
-                <input type="checkbox" value="living-room" />
+                <input type="checkbox" value="living-room" onChange={handleInputChange} />
                 <span>Living room</span>
               </label>
             </div>
@@ -274,57 +272,57 @@ function Popup() {
             <h2 className="text-center form-title">What furniture would you like to include in the project?</h2>
             <div className="form-group">
               <label>
-                <input type="checkbox" value="cot-s" />
+                <input type="checkbox" value="cot-s" onChange={handleInputChange} />
                 <span>Cot(s)</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="decor-items" />
+                <input type="checkbox" value="decor-items" onChange={handleInputChange} />
                 <span>Decor items</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="dining" />
+                <input type="checkbox" value="dining" onChange={handleInputChange} />
                 <span>Dining</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="kitchen-cabinets" />
+                <input type="checkbox" value="kitchen-cabinets" onChange={handleInputChange} />
                 <span>Kitchen cabinets</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="sofa-s" />
+                <input type="checkbox" value="sofa-s" onChange={handleInputChange} />
                 <span>Sofa(s)</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="study-unit" />
+                <input type="checkbox" value="study-unit" onChange={handleInputChange} />
                 <span>Study unit</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="tv-unit" />
+                <input type="checkbox" value="tv-unit" onChange={handleInputChange} />
                 <span>TV unit</span>
               </label>
             </div>
             <div className="form-group">
               <label className="">
-                <input type="checkbox" value="wardrobe-s" />
+                <input type="checkbox" value="wardrobe-s" onChange={handleInputChange} />
                 <span>Wardrobe(s)</span>
               </label>
             </div>
             <div className="form-group">
               <label>
-                <input type="checkbox" value="other" />
+                <input type="checkbox" value="other" onChange={handleInputChange} />
                 <span>
-                  <input type="text" placeholder="Other" />
+                  <input type="text" placeholder="Other" onChange={handleInputChange} />
                 </span>
               </label>
             </div>
@@ -342,35 +340,35 @@ function Popup() {
           <div className={`form-container ${currentStep === 7 ? 'active' : ''}`}>
             <h2 className="text-center form-title">What is your approx. budget for the project?</h2>
             <div className="form-group">
-              <input name="less-than--1-lakh" type="radio" className="" value="" />
+              <input name="less-than--1-lakh" type="radio" className="" value="less-than--1-lakh" />
               <label>Less than ₹1 Lakh</label>
             </div>
             <div className="form-group">
-              <input name="1-lakh-to--2-49-lakhs" type="radio" className="" value="" />
+              <input name="1-lakh-to--2-49-lakhs" type="radio" className="" value="1-lakh-to--2-49-lakhs" />
               <label>₹1 Lakh to ₹2.49 Lakhs</label>
             </div>
             <div className="form-group">
-              <input name="2-5-lakhs-to--4-9-lakhs" type="radio" className="" value="" />
+              <input name="2-5-lakhs-to--4-9-lakhs" type="radio" className="" value="2-5-lakhs-to--4-9-lakhs" />
               <label>₹2.5 Lakhs to ₹4.9 Lakhs</label>
             </div>
-            <div className="form-group" data-cy="5-lakhs-to--9-9-lakhs">
-              <input name="5-lakhs-to--9-9-lakhs" type="radio" className="" value="" />
+            <div className="form-group" >
+              <input name="5-lakhs-to--9-9-lakhs" type="radio" className="" value="5-lakhs-to--9-9-lakhs" />
               <label>₹5 Lakhs to ₹9.9 Lakhs</label>
             </div>
-            <div className="form-group" data-cy="10-lakhs-to--19-9-lakhs">
-              <input name="10-lakhs-to--19-9-lakhs" type="radio" className="" value="" />
+            <div className="form-group">
+              <input name="10-lakhs-to--19-9-lakhs" type="radio" className="" value="10-lakhs-to--19-9-lakhs" />
               <label>₹10 Lakhs to ₹19.9 Lakhs</label>
             </div>
             <div className="form-group">
-              <input name="20-lakhs-to--29-9-lakhs" type="radio" className="" value="" />
+              <input name="20-lakhs-to--29-9-lakhs" type="radio" className="" value="20-lakhs-to--29-9-lakhs" />
               <label>₹20 Lakhs to ₹29.9 Lakhs</label>
             </div>
             <div className="form-group">
-              <input name="30-lakhs-or-more" type="radio" className="" value="" />
+              <input name="30-lakhs-or-more" type="radio" className="" value="₹30 Lakhs or more" />
               <label>₹30 Lakhs or more</label>
             </div>
             <div className="form-group">
-              <input name="i-would-like-to-discuss-with-the-pro" type="radio" className="" value="" />
+              <input name="i-would-like-to-discuss-with-the-pro" type="radio" className="" value="i-would-like-to-discuss-with-the-pro" />
               <label>I would like to discuss with the pro</label>
             </div>
             <div className="form-group text-center mar-b-0">
@@ -444,8 +442,8 @@ function Popup() {
           <div className={`form-container ${currentStep === 10 ? 'active' : ''}`}>
             <h2 className="text-center form-title">Where do you need the Interior Designer?</h2>
             <div class="form-group">
-                <input name="autocomplete" id="autocomplete" type="text" placeholder="Enter your postcode or town" value="" />
-             </div>
+              <input name="autocomplete" id="autocomplete" type="text" placeholder="Enter your postcode or town" value="" />
+            </div>
 
             <div className="form-group text-center mar-b-0">
               <button type="button" className="btn btn-default back" onClick={prevStep}>
