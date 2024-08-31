@@ -37,16 +37,24 @@ export default function Header() {
       }
     }, 100);
   };
+
   const handleGetAQuoteClick = () => {
     setIsPopupOpen(true);
   };
+
   const closePopup = () => {
     setIsPopupOpen(false);
   };
+
+  const handleButtonClick = () => {
+    setIsPopupOpen(false); // Close the popup when the button is clicked
+  };
+
   useEffect(() => {
     setIsPopupOpen(true); // Open popup on initial load
   }, []);
 
+  
   return (
     <>
       <header>
@@ -137,7 +145,7 @@ export default function Header() {
               <button className="close-popup" onClick={closePopup}>
                 <i className="bi-x-lg"></i>
               </button>
-              <Popup />
+              <Popup onButtonClick={handleButtonClick} />
             </div>
           </div>
         </div>
