@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './Header.css';
-import Popup from '../GetApopup/Popup.jsx'
+import Popup from '../GetApopup/Popup.jsx';
+import logo from '../../Assets/Pragatis Interio Logo 1.png'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,10 +87,7 @@ export default function Header() {
         </div>
         <nav className={`border-gray-200 px-4 lg:px-6 py-1 ${isHeaderFixed ? 'fixed' : ''}`}>
           <div className="flex flex-wrap justify-between items-center container mx-auto">
-            <a href="https://flowbite.com" className="flex items-center">
-              <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-              <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-            </a>
+            <img src={logo} alt="" className='logo' />
             <button className="text-gray-700 lg:hidden toggleMenu" onClick={toggleMenu}>
               <i className="bi-list text-2xl"></i>
             </button>
@@ -110,7 +108,7 @@ export default function Header() {
                 <a onClick={() => handleProjectClick('Contact')} className="block py-2 pr-4 pl-3 rounded lg:p-0">Contact Us</a>
               </li>
             </ul>
-            <NavLink className="navBtn hidden lg:block" onClick={handleGetAQuoteClick}>Get A Quote</NavLink>
+            <NavLink className="navBtn hidden lg:block" onClick={handleGetAQuoteClick}>Get A Free Quote</NavLink>
           </div>
         </nav>
         <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>

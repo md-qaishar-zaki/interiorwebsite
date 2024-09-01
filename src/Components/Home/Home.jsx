@@ -185,7 +185,7 @@ export default function Home() {
                 <i className="bi-clipboard"></i>
                 <div className="no">01</div>
               </div>
-              <h6>Survey</h6>
+              <h6>Residencial Interior Design</h6>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
           </div>
@@ -343,11 +343,11 @@ export default function Home() {
               <div className="address-container">
                 <div>
                   <h3>Address</h3>
-                  <p>4517 Washington Ave. <br /> Manchester, Kentucky 39495</p>
+                  <p>Shop No. 8, Laxmi Narayan Apt Opp.<br /> Fish Market, Vangaon Tal-Dahanu,<br /> Mumbai, Maharashtra 401103</p>
                 </div>
                 <div className='py-2'>
                   <h3>Contact</h3>
-                  <p>Phone: +91 00000000<br /> Email: support@gmail.com</p>
+                  <p>Phone: +91 7977523087<br /> Email: pragatisinterio@gmail.com</p>
                 </div>
                 <div className='py-2'>
                   <h3>Open Time</h3>
@@ -357,9 +357,7 @@ export default function Home() {
                   <h3>Stay Connected</h3>
                   <div className="flex icons">
                     <i className="bi-facebook"></i>
-                    <i className="bi-twitter"></i>
                     <i className="bi-instagram"></i>
-                    <i className="bi-youtube"></i>
                   </div>
                 </div>
               </div>
@@ -367,7 +365,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='OutTeam container mx-auto'>
+      <section className='OutTeam container mx-auto hidden'>
         <div className="contentHeader">
           <span className="tag">Our team</span>
           <h2>Meet Our <span>Expert Team</span></h2>

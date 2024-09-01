@@ -15,7 +15,7 @@ html {
 }
 
 :root {
-    --primary-color: rgb(232 178 55);
+    --primary-color: #fb8200;
     --white-color: rgb(255, 255, 255);
     --secondary-color: gray;
     --text-color: #252725;

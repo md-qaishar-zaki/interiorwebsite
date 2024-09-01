@@ -242,7 +242,7 @@
 .Services .boxs {
     width: 33.3%;
     background: rgb(128, 128, 128);
-    background: linear-gradient(0deg, rgba(128, 128, 128, 1) 25%, rgba(232, 178, 55, 1) 100%);
+    background: linear-gradient(0deg, rgba(128, 128, 128, 1) 25%, rgb(251 130 0) 100%);
     margin: 10px;
     border-radius: 20px;
     padding: 20px;
@@ -689,6 +689,9 @@
 }
 
 .contact-us .address-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -697,6 +700,11 @@
     z-index: 2;
     position: absolute;
     top: 10px;
+    justify-content: center;
+}
+
+.address-container div {
+    width: 100%;
 }
 
 .contact-us .address-container h3 {
@@ -758,6 +766,10 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+}
+
+.imgBox img {
+    width: 100%;
 }
 
 .OutTeam .imgBox img {
