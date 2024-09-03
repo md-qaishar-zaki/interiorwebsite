@@ -6,9 +6,7 @@ import Hero_IMG from '../../Assets/Hero.jpg';
 import Art_IMG from '../../Assets/art.jpg';
 import ProjectFrame from '../../Assets/ProjectFrame.png';
 import Project from '../../Assets/project1.jpg';
-import TransformationsFrame from '../../Assets/TransformationsFrame.png';
-import TestimonialFrame from '../../Assets/TestimonialFrame.png';
-import TestimonialIMG from '../../Assets/TestimonialIMG.png';
+import TransformationsFrame from '../../Assets/TransformationsFrame.png'; 
 import ContactFrame from '../../Assets/Contact-Frame.png';
 import TeamFrame from '../../Assets/TeamFrame.png';
 import 'react-tabs/style/react-tabs.css';
@@ -18,8 +16,7 @@ import { Carousel } from 'react-responsive-carousel';
 import AboutIMG from '../../Assets/aboutIMG.png';
 import OneTeam from '../../Assets/1team.png';
 import TwoTeam from '../../Assets/2team.png';
-import ThreeTeam from '../../Assets/3team.png';
-import ww from '../../Assets/After_&_Before/After_1.jpg'
+import ThreeTeam from '../../Assets/3team.png'; 
 
 
 export default function Home() {
@@ -33,7 +30,7 @@ export default function Home() {
   ];
   return (
     <>
-      <main className='main-Banner'>
+      <main className='main-Banner' id='Home'>
         <div className="content container mx-auto flex">
           <div className="w-1/2 contentBox">
             <span className='tag'>Since 2021</span>
@@ -101,7 +98,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='Services'>
+      <section className='Services' id='Services'>
         <div className="container mx-auto">
           <div className="content">
             <div className="contentHeader">
@@ -207,11 +204,10 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="pdBox">
             <div className="contentHeader">
-              <span className="tag">Our Projects</span>
+              <span className="tag">Our Design Ideas</span>
               <h2>Explore <span>Our Portfolio</span></h2>
               <div className="flex justify-between items-center">
                 <h2>of Featured Projects</h2>
-                <button className='viewBTN'><i className="bi-arrow-right-circle-fill"></i><span>View All Projects</span></button>
               </div>
             </div>
           </div>
@@ -358,6 +354,7 @@ export default function Home() {
                   <div className="flex icons">
                     <i className="bi-facebook"></i>
                     <i className="bi-instagram"></i>
+                    <i className="bi-geo-alt"></i>
                   </div>
                 </div>
               </div>

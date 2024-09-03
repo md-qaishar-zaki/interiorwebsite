@@ -222,7 +222,10 @@
 }
 
 .AboutUS .AboutBox {
-    padding: 90px 110px !important;
+    padding: 40px 0px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .Services .contentHeader h2,
@@ -836,6 +839,21 @@
 
 
 @media (max-width: 320px) {
+
+    .main-Banner h2 span {
+        font-size: 43px;
+    }
+
+    main .content .imgBox {
+        width: 100%;
+        top: 70px;
+        right: 28px;
+    }
+
+    .main-Banner button {
+        width: 80%;
+    }
+
     .main-Banner {
         padding: 40px 3px;
     }
@@ -1035,6 +1053,20 @@
 }
 
 @media (max-width: 375px) and (min-width: 321px) {
+    .main-Banner button {
+        width: 80%;
+    }
+
+    .main-Banner h2 span {
+        font-size: 43px;
+    }
+
+    main .content .imgBox {
+        width: 100%;
+        top: 70px;
+        right: 28px;
+    }
+
     .main-Banner {
         padding: 40px 3px;
     }
@@ -1234,6 +1266,20 @@
 }
 
 @media (max-width: 425px) and (min-width: 376px) {
+    .main-Banner h2 span {
+        font-size: 38px;
+    }
+
+    .main-Banner button {
+        width: 60%;
+    }
+
+    main .content .imgBox {
+        width: 100%;
+        top: 70px;
+        right: 28px;
+    }
+
     .main-Banner {
         padding: 40px 3px;
     }
@@ -1433,6 +1479,14 @@
 }
 
 @media (max-width: 550px) and (min-width: 425px) {
+    .main-Banner h2 span {
+        font-size: 38px;
+    }
+
+    .main-Banner h2 {
+        font-size: 27px;
+    }
+
     .AllBoxes {
         flex-direction: column;
     }
@@ -1475,6 +1529,9 @@
 }
 
 @media (max-width: 768px) and (min-width: 426px) {
+    .main-Banner button {
+        width: 90%;
+    }
 
     .contentHeader h2 {
         font-size: 18px;
@@ -1719,8 +1776,22 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (max-width: 1024px) and (min-width: 768px) {
+    .main-Banner button {
+        width: 90%;
+    }
+}
 
-@media (min-width: 1200px) and (max-width: 1399.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .main-Banner button {
+        width: 53%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .main-Banner button {
+        width: 53%;
+    }
+}
 
 @media (min-width: 1400px) {}

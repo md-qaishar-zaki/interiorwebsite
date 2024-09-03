@@ -36,7 +36,7 @@ export default function Header() {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-    }, 100);
+    }, 80);
   };
 
   const handleGetAQuoteClick = () => {
@@ -91,12 +91,12 @@ export default function Header() {
             <button className="text-gray-700 lg:hidden toggleMenu" onClick={toggleMenu}>
               <i className="bi-list text-2xl"></i>
             </button>
-            <ul className="hidden lg:flex lg:flex-row lg:space-x-8">
+            <ul className="hidden lg:flex lg:flex-row lg:space-x-7">
               <li>
-                <NavLink to="/" className="block py-2 pr-4 pl-3 rounded lg:p-0" aria-current="page">Home</NavLink>
+              <a href='/' className="block py-2 pr-4 pl-3 rounded lg:p-0">Home</a>
               </li>
               <li>
-                <NavLink to="/Services" className="block py-2 pr-4 pl-3 rounded lg:p-0">Services</NavLink>
+              <a onClick={() => handleProjectClick('Services')} className="block py-2 pr-4 pl-3 rounded lg:p-0">Services</a>
               </li>
               <li>
                 <a onClick={() => handleProjectClick('Project')} className="block py-2 pr-4 pl-3 rounded lg:p-0">Projects</a>

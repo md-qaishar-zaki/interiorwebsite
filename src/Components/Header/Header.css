@@ -88,6 +88,7 @@ nav a {
     color: #333333;
     padding: 10px 15px;
     border-radius: 5px;
+    padding: 5px 20px !important;
 }
 
 nav a:hover {
@@ -113,6 +114,14 @@ main {
     .contact {
         margin: 10px 0 !important;
         flex-direction: column !important;
+    }
+    .social-media i{
+        font-size: 8px;
+        height: 16px;
+        width: 90%;
+    }
+    .social-media {
+        display: block;
     }
 }
 
@@ -276,4 +285,21 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+ul li {
+    margin: 0 !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    .popup {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popup {
+        width: 95%;
+    }
 }

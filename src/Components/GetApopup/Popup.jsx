@@ -14,12 +14,16 @@ const Popup = ({ onButtonClick }) => {
     'budget': '',
     'consider-online-design-services': '',
     'hiring_decision': '',
-    'postcode_or_town': ''
+    'postcode_or_town': '',
+    'Name': '',
+    'Email': '',
+    'ContactNo': '',
+
 
 
   });
 
-  const totalSteps = 10;
+  const totalSteps = 11;
 
   const nextStep = () => {
     setCurrentStep((prevStep) => (prevStep < totalSteps ? prevStep + 1 : prevStep));
@@ -68,7 +72,7 @@ const Popup = ({ onButtonClick }) => {
 
     fetch('https://script.google.com/macros/s/AKfycbyAg9SPb3ev5ylpRNOur5WkgRsjEAGtKaxV2algvcM1Z-fWUyc6-fMAGbteXq9mH10HRA/exec',
       { method: 'POST', body: data })
-      .then(() => { 
+      .then(() => {
         setLoading(false);
         onButtonClick(true)
       })
@@ -81,25 +85,59 @@ const Popup = ({ onButtonClick }) => {
   return (
     <div className="form-wizard">
       <div className="steps">
-         <ul>
-           {[...Array(totalSteps)].map((_, index) => (
-             <li
-               key={index}
-               className={currentStep >= index + 1 ? 'active' : ''}
-               onClick={() => setCurrentStep(index + 1)}
-             >
-               <span>{index + 1}</span>
-               {['', '', ''][index]}
-             </li>
-           ))}
-         </ul>
-       </div>
+        <ul>
+          {[...Array(totalSteps)].map((_, index) => (
+            <li
+              key={index}
+              className={currentStep >= index + 1 ? 'active' : ''}
+              onClick={() => setCurrentStep(index + 1)}
+            >
+              <span>{index + 1}</span>
+              {['', '', ''][index]}
+            </li>
+          ))}
+        </ul>
+      </div>
       <form onSubmit={handleSubmit}>
         {loading && <div className="loader">
           <img src={email_sender} alt="" />
         </div>}
 
         <div className={`form-container ${currentStep === 1 ? 'active' : ''}`}>
+          <h2 className="text-center form-title">Personal Details</h2>
+          <div className="form-group">
+            <input
+              name="Name"
+              type="text"
+              id="Name" 
+              onChange={handleInputChange} placeholder='Enter Your Full Name'
+            /> 
+          </div>
+          <div className="form-group">
+            <input
+              name="Email"
+              type="email"
+              id="Email" 
+              onChange={handleInputChange} placeholder='Enter Your Email ID'
+            /> 
+          </div>
+          <div className="form-group">
+            <input
+              name="ContactNo"
+              type="number"
+              id="ContactNo" 
+              onChange={handleInputChange} placeholder='Enter Your Contact No'
+            /> 
+          </div>
+
+          <div className="mt-5 mar-b-0">
+            <button type="button" className="btn btn-primary next" onClick={nextStep}>
+              NEXT
+            </button>
+          </div>
+        </div>
+
+        <div className={`form-container ${currentStep === 2 ? 'active' : ''}`}>
           <h2 className="text-center form-title">What type of interior service do you need?</h2>
           <div className="form-group">
             <input
@@ -143,13 +181,16 @@ const Popup = ({ onButtonClick }) => {
           </div>
 
           <div className="mt-5 mar-b-0">
+          <button type="button" className="btn btn-default back" onClick={prevStep}>
+              BACK
+            </button>
             <button type="button" className="btn btn-primary next" onClick={nextStep}>
               NEXT
             </button>
           </div>
         </div>
 
-        <div className={`form-container ${currentStep === 2 ? 'active' : ''}`}>
+        <div className={`form-container ${currentStep === 3 ? 'active' : ''}`}>
           <h2 className="text-center form-title">What type of project is it?</h2>
           <div className="form-group">
             <input
@@ -196,7 +237,7 @@ const Popup = ({ onButtonClick }) => {
           </div>
         </div>
 
-        <div className={`form-container ${currentStep === 3 ? 'active' : ''}`}>
+        <div className={`form-container ${currentStep === 4 ? 'active' : ''}`}>
           <h2 className="text-center form-title">What kind of property is this for?</h2>
           <div className="form-group">
             <input
@@ -293,7 +334,7 @@ const Popup = ({ onButtonClick }) => {
           </div>
         </div>
 
-        <div className={`form-container ${currentStep === 4 ? 'active' : ''}`}>
+        <div className={`form-container ${currentStep === 5 ? 'active' : ''}`}>
           <h2 className="text-center form-title">How large is your property?</h2>
           <div className="form-group">
             <input
@@ -369,7 +410,7 @@ const Popup = ({ onButtonClick }) => {
           </div>
         </div>
 
-        <div className={`form-container ${currentStep === 5 ? 'active' : ''}`}>
+        <div className={`form-container ${currentStep === 6 ? 'active' : ''}`}>
           <h2 className="text-center form-title">Which room(s) need improving?</h2>
           <div className="form-group">
             <label>
@@ -469,7 +510,7 @@ const Popup = ({ onButtonClick }) => {
           </div>
         </div>
 
-        <div className={`form-container ${currentStep === 6 ? 'active' : ''}`}>
+        <div className={`form-container ${currentStep === 7 ? 'active' : ''}`}>
           <h2 className="text-center form-title">What furniture would you like to include in the project?</h2>
           <div className="form-group">
             <label>
@@ -539,7 +580,7 @@ const Popup = ({ onButtonClick }) => {
           </div>
         </div>
 
-        <div className={`form-container ${currentStep === 7 ? 'active' : ''}`}>
+        <div className={`form-container ${currentStep === 8 ? 'active' : ''}`}>
           <h2 className="text-center form-title">What is your approx. budget for the project?</h2>
           <div className="form-group">
             <input
@@ -631,7 +672,7 @@ const Popup = ({ onButtonClick }) => {
           </div>
         </div>
 
-        <div className={`form-container ${currentStep === 8 ? 'active' : ''}`}>
+        <div className={`form-container ${currentStep === 9 ? 'active' : ''}`}>
           <h2 className="text-center form-title">Would you consider online design services?</h2>
           <div className="form-group">
             <input name="consider-online-design-services" type="radio" id="yes" value="Yes" onChange={handleInputChange} />
@@ -651,7 +692,7 @@ const Popup = ({ onButtonClick }) => {
           </div>
         </div>
 
-        <div className={`form-container ${currentStep === 9 ? 'active' : ''}`}>
+        <div className={`form-container ${currentStep === 10 ? 'active' : ''}`}>
           <h2 className="text-center form-title">How likely are you to make a hiring decision?</h2>
           <div class="form-group">
             <input name="hiring_decision" value="im-ready-to-hire-now" type="radio" id="ready to hire" onChange={handleInputChange} />
@@ -688,7 +729,7 @@ const Popup = ({ onButtonClick }) => {
           </div>
         </div>
 
-        <div className={`form-container ${currentStep === 10 ? 'active' : ''}`}>
+        <div className={`form-container ${currentStep === 11 ? 'active' : ''}`}>
           <h2 className="text-center form-title">Where do you need the Interior Designer?</h2>
           <div class="form-group">
             <input name="postcode_or_town" id="postcode_or_town" type="text" placeholder="Enter your postcode or town" onChange={handleInputChange} />
