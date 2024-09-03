@@ -213,13 +213,14 @@ export default function Home() {
           </div>
           <Tabs>
             <TabList className="pdBox">
-              <Tab>Interior</Tab>
+            <Tab>Interior</Tab>
+              <Tab>Bed Room</Tab>
               <Tab>Exterior</Tab>
-              <Tab>Residence</Tab>
               <Tab>Offices</Tab>
               <Tab>Kitchen</Tab>
               <Tab>Living Room</Tab>
-              <Tab>Bed Room</Tab>
+              <Tab>Office</Tab>
+              <Tab>Residencial</Tab>
             </TabList>
 
             <TabPanel>
