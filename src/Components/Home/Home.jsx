@@ -6,7 +6,7 @@ import Hero_IMG from '../../Assets/Hero.jpg';
 import Art_IMG from '../../Assets/art.jpg';
 import ProjectFrame from '../../Assets/ProjectFrame.png';
 import Project from '../../Assets/project1.jpg';
-import TransformationsFrame from '../../Assets/TransformationsFrame.png'; 
+import TransformationsFrame from '../../Assets/TransformationsFrame.png';
 import ContactFrame from '../../Assets/Contact-Frame.png';
 import TeamFrame from '../../Assets/TeamFrame.png';
 import 'react-tabs/style/react-tabs.css';
@@ -16,16 +16,34 @@ import { Carousel } from 'react-responsive-carousel';
 import AboutIMG from '../../Assets/aboutIMG.png';
 import OneTeam from '../../Assets/1team.png';
 import TwoTeam from '../../Assets/2team.png';
-import ThreeTeam from '../../Assets/3team.png'; 
+import ThreeTeam from '../../Assets/3team.png';
+import Project2 from '../../Assets/project pragrati/2 interior.jpg';
+import bedroom1 from '../../Assets/project pragrati/bed room 1.jpg';
+import bedroom2 from '../../Assets/project pragrati/bed room 2.jpg';
+import exterior1 from '../../Assets/project pragrati/exterior 1.jpg';
+import exterior2 from '../../Assets/project pragrati/exterior 2.jpg';
+import kicthen1 from '../../Assets/project pragrati/kicthen 1.jpg';
+import kicthen2 from '../../Assets/project pragrati/kicthen 2.jpg';
+import livingroom1 from '../../Assets/project pragrati/living room 1.jpg';
+import livingroom2 from '../../Assets/project pragrati/living room 2.jpg';
+import office1 from '../../Assets/project pragrati/office 1.jpg';
+import office2 from '../../Assets/project pragrati/office 2.jpg';
+import residencial1 from '../../Assets/project pragrati/residencial 1.jpg';
+import residencial2 from '../../Assets/project pragrati/residencial 2.jpg';
+
 
 
 export default function Home() {
   const images = [
-    { before: require('../../Assets/After_&_Before/Before_1.jpg'), after: require('../../Assets/After_&_Before/After_1.jpg') },
-    { before: require('../../Assets/After_&_Before/Before_2.jpg'), after: require('../../Assets/After_&_Before/After_2.jpg') },
-    { before: require('../../Assets/After_&_Before/Before_3.jpg'), after: require('../../Assets/After_&_Before/After_3.jpg') },
-    { before: require('../../Assets/After_&_Before/Before_4.jpg'), after: require('../../Assets/After_&_Before/After_4.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_9.jpg'), after: require('../../Assets/After_&_Before/After_9.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_8.jpg'), after: require('../../Assets/After_&_Before/After_8.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_7.jpg'), after: require('../../Assets/After_&_Before/After_7.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_6.jpg'), after: require('../../Assets/After_&_Before/After_6.jpg') },
     { before: require('../../Assets/After_&_Before/Before_5.jpg'), after: require('../../Assets/After_&_Before/After_5.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_4.jpg'), after: require('../../Assets/After_&_Before/After_4.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_3.jpg'), after: require('../../Assets/After_&_Before/After_3.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_2.jpg'), after: require('../../Assets/After_&_Before/After_2.jpg') },
+    { before: require('../../Assets/After_&_Before/Before_1.jpg'), after: require('../../Assets/After_&_Before/After_1.jpg') },
     // Add more images as needed
   ];
   return (
@@ -213,10 +231,9 @@ export default function Home() {
           </div>
           <Tabs>
             <TabList className="pdBox">
-            <Tab>Interior</Tab>
+              <Tab>Interior</Tab>
               <Tab>Bed Room</Tab>
               <Tab>Exterior</Tab>
-              <Tab>Offices</Tab>
               <Tab>Kitchen</Tab>
               <Tab>Living Room</Tab>
               <Tab>Office</Tab>
@@ -241,7 +258,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={Project} alt="" className='projectIMG' />
+                    <img src={Project2} alt="" className='projectIMG' />
                     <div className="Details">
                       <h4>Modern 4 BHK Apartment Interior Design</h4>
                       <button>2024</button>
@@ -258,7 +275,7 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={Project} alt="" className='projectIMG' />
+                    <img src={bedroom1} alt="" className='projectIMG' />
                     <div className="Details">
                       <h4>Modern 4 BHK Apartment Interior Design</h4>
                       <button>2024</button>
@@ -271,7 +288,157 @@ export default function Home() {
                 <div className="w-1/2">
                   <div className="imgBox">
                     <img src={ProjectFrame} alt="" className='Frame' />
-                    <img src={Project} alt="" className='projectIMG' />
+                    <img src={bedroom2} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel>
+              <div className="flex pdBox">
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={exterior1} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
+                </div>
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={exterior2} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel>
+              <div className="flex pdBox">
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={kicthen1} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
+                </div>
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={kicthen2} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel>
+              <div className="flex pdBox">
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={livingroom1} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
+                </div>
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={livingroom2} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel>
+              <div className="flex pdBox">
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={office1} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
+                </div>
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={office2} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel>
+              <div className="flex pdBox">
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={residencial1} alt="" className='projectIMG' />
+                    <div className="Details">
+                      <h4>Modern 4 BHK Apartment Interior Design</h4>
+                      <button>2024</button>
+                      <button>Apartment</button>
+                      <button>Residential Design</button>
+                    </div>
+                    <i className="bi-arrow-up-right-circle-fill"></i>
+                  </div>
+                </div>
+                <div className="w-1/2">
+                  <div className="imgBox">
+                    <img src={ProjectFrame} alt="" className='Frame' />
+                    <img src={residencial2} alt="" className='projectIMG' />
                     <div className="Details">
                       <h4>Modern 4 BHK Apartment Interior Design</h4>
                       <button>2024</button>
@@ -284,6 +451,108 @@ export default function Home() {
               </div>
             </TabPanel>
           </Tabs>
+        </div>
+      </section>
+      <section id='Project_Details'>
+        <div className="container mx-auto w-11/12 py-7">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
+            <a href="/in/design-ideas/tile-designs" class="">
+              <div class="category-card h-full"><img loading="lazy"
+                src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg"
+                alt="Floor Tile Design ideas for home - Livspace"
+                srcset="https://images.livspace-cdn.com/w:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg 400w, https://images.livspace-cdn.com/w:768/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg 768w, https://images.livspace-cdn.com/w:1024/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg 1024w, https://images.livspace-cdn.com/w:1280/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg 1280w, https://images.livspace-cdn.com/w:1366/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg 1366w, https://images.livspace-cdn.com/w:1440/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg 1440w, https://images.livspace-cdn.com/w:1600/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg 1600w, https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg 1920w, https://images.livspace-cdn.com/w:2048/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg 2048w, https://images.livspace-cdn.com/w:2880/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg 2880w"
+                sizes="100vw" fetchpriority="auto" class="category-image w-full loaded" />
+                <div class="p-4">
+                  <p class="subtitle_large">
+                    Tile Designs
+                  </p>
+                  <p class="caption_default on-surface-70-color mt-1">
+                    591 Designs
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="/in/design-ideas/home-wallpaper-designs" class="">
+              <div class="category-card h-full"><img loading="lazy"
+                src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg"
+                alt="Home Wallpaper Designs - Livspace"
+                srcset="https://images.livspace-cdn.com/w:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg 400w, https://images.livspace-cdn.com/w:768/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg 768w, https://images.livspace-cdn.com/w:1024/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg 1024w, https://images.livspace-cdn.com/w:1280/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg 1280w, https://images.livspace-cdn.com/w:1366/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg 1366w, https://images.livspace-cdn.com/w:1440/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg 1440w, https://images.livspace-cdn.com/w:1600/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg 1600w, https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg 1920w, https://images.livspace-cdn.com/w:2048/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg 2048w, https://images.livspace-cdn.com/w:2880/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg 2880w"
+                sizes="100vw" fetchpriority="auto" class="category-image w-full loaded" />
+                <div class="p-4">
+                  <p class="subtitle_large">
+                    Wallpaper Designs
+                  </p>
+                  <p class="caption_default on-surface-70-color mt-1">
+                    544 Designs
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="/in/design-ideas/wall-paint-designs" class="">
+              <div class="category-card h-full"><img loading="lazy"
+                src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg"
+                alt="Wall Paint Design for your home - Livspace"
+                srcset="https://images.livspace-cdn.com/w:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg 400w, https://images.livspace-cdn.com/w:768/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg 768w, https://images.livspace-cdn.com/w:1024/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg 1024w, https://images.livspace-cdn.com/w:1280/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg 1280w, https://images.livspace-cdn.com/w:1366/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg 1366w, https://images.livspace-cdn.com/w:1440/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg 1440w, https://images.livspace-cdn.com/w:1600/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg 1600w, https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg 1920w, https://images.livspace-cdn.com/w:2048/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg 2048w, https://images.livspace-cdn.com/w:2880/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg 2880w"
+                sizes="100vw" fetchpriority="auto" class="category-image w-full loaded" />
+                <div class="p-4">
+                  <p class="subtitle_large">
+                    Wall Paint Designs
+                  </p>
+                  <p class="caption_default on-surface-70-color mt-1">
+                    431 Designs
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="/in/design-ideas/flooring-designs" class="">
+              <div class="category-card h-full"><img loading="lazy"
+                src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg"
+                alt="Stunning Flooring Designs - Livspace"
+                srcset="https://images.livspace-cdn.com/w:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg 400w, https://images.livspace-cdn.com/w:768/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg 768w, https://images.livspace-cdn.com/w:1024/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg 1024w, https://images.livspace-cdn.com/w:1280/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg 1280w, https://images.livspace-cdn.com/w:1366/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg 1366w, https://images.livspace-cdn.com/w:1440/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg 1440w, https://images.livspace-cdn.com/w:1600/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg 1600w, https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg 1920w, https://images.livspace-cdn.com/w:2048/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg 2048w, https://images.livspace-cdn.com/w:2880/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg 2880w"
+                sizes="100vw" fetchpriority="auto" class="category-image w-full" />
+                <div class="p-4">
+                  <p class="subtitle_large">
+                    Flooring Designs
+                  </p>
+                  <p class="caption_default on-surface-70-color mt-1">
+                    308 Designs
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="/in/design-ideas/wall-decor-designs" class="">
+              <div class="category-card h-full"><img loading="lazy"
+                src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg"
+                alt="Wall Decor Ideas- Livspace"
+                srcset="https://images.livspace-cdn.com/w:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg 400w, https://images.livspace-cdn.com/w:768/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg 768w, https://images.livspace-cdn.com/w:1024/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg 1024w, https://images.livspace-cdn.com/w:1280/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg 1280w, https://images.livspace-cdn.com/w:1366/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg 1366w, https://images.livspace-cdn.com/w:1440/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg 1440w, https://images.livspace-cdn.com/w:1600/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg 1600w, https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg 1920w, https://images.livspace-cdn.com/w:2048/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg 2048w, https://images.livspace-cdn.com/w:2880/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg 2880w"
+                sizes="100vw" fetchpriority="auto" class="category-image w-full" />
+                <div class="p-4">
+                  <p class="subtitle_large">
+                    Wall Decor Ideas
+                  </p>
+                  <p class="caption_default on-surface-70-color mt-1">
+                    401 Designs
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="/in/design-ideas/window-designs" class="">
+              <div class="category-card h-full">
+                <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg"
+                  alt="Trending Window Designs - Livspace"
+                  srcset="https://images.livspace-cdn.com/w:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg 400w, https://images.livspace-cdn.com/w:768/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg 768w, https://images.livspace-cdn.com/w:1024/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg 1024w, https://images.livspace-cdn.com/w:1280/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg 1280w, https://images.livspace-cdn.com/w:1366/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg 1366w, https://images.livspace-cdn.com/w:1440/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg 1440w, https://images.livspace-cdn.com/w:1600/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg 1600w, https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg 1920w, https://images.livspace-cdn.com/w:2048/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg 2048w, https://images.livspace-cdn.com/w:2880/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg 2880w"
+                  sizes="100vw" fetchpriority="auto" class="category-image w-full" />
+                <div class="p-4">
+                  <p class="subtitle_large">
+                    Window Designs
+                  </p>
+                  <p class="caption_default on-surface-70-color mt-1">
+                    182 Designs
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
       <section className='Transformations'>
