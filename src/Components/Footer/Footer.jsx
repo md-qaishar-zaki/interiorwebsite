@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import logo from './../../Assets/Pragatis Interio Logo 1.png'
 
 export default function Footer() {
   return (
@@ -8,8 +9,8 @@ export default function Footer() {
         <div className="container mx-auto">
           <div className="flex boxs">
             <div className="w-2/6">
-              <h6>Logo</h6>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis reprehenderit magnam provident porro?</p>
+              <img src={logo} alt="" className='logo' />
+              <p>Redefining Spaces with Innovative Designs, Unmatched Quality, and Timeless Elegance for Every Environment</p>
               <div className="socialMedia">
                 <a href="https://www.facebook.com/people/pragatisinterio/100093655032640/?mibextid=ZbWKwL" target="_blank">
                   <i className="bi-facebook"></i>

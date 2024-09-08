@@ -60,7 +60,7 @@ footer .socialMedia i {
 
 footer input[type="email"] {
     width: 100%;
-    display: block; 
+    display: block;
     border: 1px solid #ccc;
     background: #f9f9f9;
     outline: none;
@@ -85,6 +85,9 @@ footer input[type="email"] {
     color: var(--secondary-color);
 }
 
+.logo {
+    max-width: 90px;
+}
 
 
 @media (max-width: 375px) {

@@ -124,26 +124,25 @@ export default function Home() {
               <h2>Explore Our Services:</h2>
               <div className="flex justify-between">
                 <h2><span>Your Path to Success</span></h2>
-                <button className='viewBTN'><i className="bi-arrow-right-circle-fill"></i><span>View All Services</span></button>
               </div>
             </div>
           </div>
           <div className="flex content AllBoxes pt-2">
             <div className="boxs">
               <h6>Educational Commercial</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Transform Your Space with Innovative Design Solutions</p>
               <img src={Art_IMG} alt="" />
               <i className="bi-arrow-up-right-circle-fill"></i>
             </div>
             <div className="boxs">
-              <h6>Interior Design</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h6>Residencial Interior Design</h6>
+              <p>Crafting Elegant Spaces that Reflect Your Style</p>
               <img src={Art_IMG} alt="" />
               <i className="bi-arrow-up-right-circle-fill"></i>
             </div>
             <div className="boxs">
               <h6>Hospitality Design</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Creating Memorable Spaces that Elevate Guest Experiences</p>
               <img src={Art_IMG} alt="" />
               <i className="bi-arrow-up-right-circle-fill"></i>
             </div>
@@ -177,7 +176,7 @@ export default function Home() {
                 <div className="no">01</div>
               </div>
               <h6>Discussion Meeting</h6>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Collaborative Conversations for Visionary Design Solutions</p>
             </div>
             <div className="boxs">
               <div className="icon">
@@ -185,23 +184,23 @@ export default function Home() {
                 <div className="no">01</div>
               </div>
               <h6>2D+3D Design</h6>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Blending Precision and Imagination to Bring Concepts to Life</p>
             </div>
             <div className="boxs">
               <div className="icon">
                 <i className="bi-clipboard"></i>
                 <div className="no">01</div>
               </div>
-              <h6>Survey</h6>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <h6>Execution</h6>
+              <p>Turning Vision into Reality with Flawless Implementation</p>
             </div>
             <div className="boxs">
               <div className="icon iconLast">
                 <i className="bi-clipboard"></i>
                 <div className="no">01</div>
               </div>
-              <h6>Residencial Interior Design</h6>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <h6>successfully handover</h6>
+              <p>Delivering Completed Projects with Precision and Client Satisfaction</p>
             </div>
           </div>
         </div>
@@ -238,6 +237,7 @@ export default function Home() {
               <Tab>Living Room</Tab>
               <Tab>Office</Tab>
               <Tab>Residencial</Tab>
+              <Tab>Tile Designs</Tab>
             </TabList>
 
             <TabPanel>
@@ -450,96 +450,98 @@ export default function Home() {
                 </div>
               </div>
             </TabPanel>
+            <TabPanel>
+              <section id='Project_Details'>
+                <div className="container mx-auto w-11/12 py-7">
+                  <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
+                    <a href="/" class="">
+                      <div class="category-card h-full">
+                        <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg"
+                          alt="Floor Tile Design ideas for home - Livspace" />
+                        <div class="p-4">
+                          <p class="subtitle_large">
+                            Tile Designs
+                          </p>
+                          <p class="caption_default on-surface-70-color mt-1">
+                            591 Designs
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="/" class="">
+                      <div class="category-card h-full">
+                        <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg" />
+                        <div class="p-4">
+                          <p class="subtitle_large">
+                            Wallpaper Designs
+                          </p>
+                          <p class="caption_default on-surface-70-color mt-1">
+                            544 Designs
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="/" class="">
+                      <div class="category-card h-full">
+                        <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg"
+                          alt="Wall Paint Design for your home - Livspace" />
+                        <div class="p-4">
+                          <p class="subtitle_large">
+                            Wall Paint Designs
+                          </p>
+                          <p class="caption_default on-surface-70-color mt-1">
+                            431 Designs
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="/" class="">
+                      <div class="category-card h-full">
+                        <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg"
+                          alt="Stunning Flooring Designs - Livspace" />
+                        <div class="p-4">
+                          <p class="subtitle_large">
+                            Flooring Designs
+                          </p>
+                          <p class="caption_default on-surface-70-color mt-1">
+                            308 Designs
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="/" class="">
+                      <div class="category-card h-full">
+                        <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg"
+                          alt="Wall Decor Ideas- Livspace" />
+                        <div class="p-4">
+                          <p class="subtitle_large">
+                            Wall Decor Ideas
+                          </p>
+                          <p class="caption_default on-surface-70-color mt-1">
+                            401 Designs
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="/" class="">
+                      <div class="category-card h-full">
+                        <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg"
+                          alt="Trending Window Designs - Livspace" />
+                        <div class="p-4">
+                          <p class="subtitle_large">
+                            Window Designs
+                          </p>
+                          <p class="caption_default on-surface-70-color mt-1">
+                            182 Designs
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </TabPanel>
           </Tabs>
-        </div>
-      </section>
-      <section id='Project_Details'>
-        <div className="container mx-auto w-11/12 py-7">
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
-            <a href="/" class="">
-              <div class="category-card h-full">
-                <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg"
-                  alt="Floor Tile Design ideas for home - Livspace" />
-                <div class="p-4">
-                  <p class="subtitle_large">
-                    Tile Designs
-                  </p>
-                  <p class="caption_default on-surface-70-color mt-1">
-                    591 Designs
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="/" class="">
-              <div class="category-card h-full">
-                <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670583147-IrQS8.jpg" />
-                <div class="p-4">
-                  <p class="subtitle_large">
-                    Wallpaper Designs
-                  </p>
-                  <p class="caption_default on-surface-70-color mt-1">
-                    544 Designs
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="/" class="">
-              <div class="category-card h-full">
-                <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/wall-paint-1671531935-8vnny/destop-3-1671531944-fXvDd.jpg"
-                  alt="Wall Paint Design for your home - Livspace" />
-                <div class="p-4">
-                  <p class="subtitle_large">
-                    Wall Paint Designs
-                  </p>
-                  <p class="caption_default on-surface-70-color mt-1">
-                    431 Designs
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="/" class="">
-              <div class="category-card h-full">
-                <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/flooring-1671532122-OzvjL/destop-1-1671532136-qh2Ep.jpg"
-                  alt="Stunning Flooring Designs - Livspace" />
-                <div class="p-4">
-                  <p class="subtitle_large">
-                    Flooring Designs
-                  </p>
-                  <p class="caption_default on-surface-70-color mt-1">
-                    308 Designs
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="/" class="">
-              <div class="category-card h-full">
-                <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-1670577812-gDlNc.jpg"
-                  alt="Wall Decor Ideas- Livspace" />
-                <div class="p-4">
-                  <p class="subtitle_large">
-                    Wall Decor Ideas
-                  </p>
-                  <p class="caption_default on-surface-70-color mt-1">
-                    401 Designs
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="/" class="">
-              <div class="category-card h-full">
-                <img loading="lazy" src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/ond-2022-1671518970-uZm4T/window-1671532889-xn3Yv/destop-3-1671532899-QWlv0.jpg"
-                  alt="Trending Window Designs - Livspace" />
-                <div class="p-4">
-                  <p class="subtitle_large">
-                    Window Designs
-                  </p>
-                  <p class="caption_default on-surface-70-color mt-1">
-                    182 Designs
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
         </div>
       </section>
       <section className='Transformations'>
